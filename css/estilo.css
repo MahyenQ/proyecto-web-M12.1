@@ -1,0 +1,352 @@
+/* Estilos para el menu */
+
+.navbar-nav { /*Estilo para la barra de navegación */
+    gap: 1.7rem; /* Espacio entre los elementos de la barra de navegación */
+  }
+
+  .nav-link { /* Estilo para los enlaces de navegación */
+    font-weight: 600; /* Peso de la fuente */
+    color: black; /* Color del texto */
+    text-transform: uppercase; /*es para que el texto se vea en mayusculas */
+  }
+
+  .btn-donar { /* Estilo para el botón de donar */
+    background-color: #5a7d1f; /* Color de fondo para el boton de "DONAR"*/
+    color: white; 
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 2px solid #5a7d1f; /* Bordes verdes */
+  }
+
+    .btn-donar:hover { /* Efecto al pasar el mouse sobre el botón de donar */
+      background-color: #a6c08d; /* Color verde al pasar el mouse */
+      color: black;
+    }
+
+  .navbar-brand img { /* Estilo para la imagen del logo */
+    height: 40px; 
+  }
+
+  .nav-item { /* Estilo para cada opción del menú */
+    border: 1px solid #4c8c2b; /* Borde verde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 5px 8px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco */
+    transition: background-color 0.3s, color 0.3s; /* Transición para efectos */
+  }
+
+  .nav-item:hover { /* Efecto al pasar el mouse sobre cada opción */
+    background-color: #a6c08d; /* Fondo verde claro */
+    color: black; /* Color del texto */
+  }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ /* la parte de que es ampaz? */
+
+body { /* Estilos generales para cuerpo */
+  font-family: 'Roboto Slab', sans-serif;
+  background-color: #ffffff;
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  color: #222; 
+  background-image: url(../img/imagendefondo.png); /* Imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen en la pantalla */
+  flex-wrap: wrap;  /* Permite que los elementos se ajusten en pantallas pequeñas */
+  background-size: cover; 
+}
+
+.cear-section { /* Sección principal "AMPAZ - AYUDA AL REFUGIADO" */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cear-section h1 { /* Título principal "AMPAZ - AYUDA AL REFUGIADO"  */
+  font-size: 35px;
+  font-weight: bold;
+  color: black; /* Color blanco para el texto */
+}
+
+.cear-section h2 { /* Subtítulo con línea debajo "QUE ES AMPAZ?"*/
+  font-size: 27px;
+  color: #4c8c2b;
+  margin-top: 20px;
+  position: relative; /* Para la línea debajo del subtítulo */
+  color: black; /* Color blanco para el texto */
+}
+
+.cear-section h2::after { /* Línea debajo del subtítulo */
+  content: '';
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #f47309;
+  margin: 8px auto 0;
+}
+
+.text { /* para la descrpcion de "QUE ES AMPAZ?"*/
+  border: 2px solid #2e4d1b; /* Borde verde oscuro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: rgb(177, 176, 171); /* Fondo claro */
+  margin: 0 auto; /* Centra el cuadro horizontalmente */
+  width: 60%; /* Ocupa el 50% del ancho del contenedor */
+  background-color: rgba(128, 128, 12, 0.5); /* Fondo gris transparente */
+}
+
+.cards-container { /* Contenedor de cada cuadro */
+  display: flex; /* Para alinear los cuadros en fila */
+  justify-content: space-between; /* Espacio entre los cuadros */
+  flex-wrap: wrap; /* Permite que los cuadros se ajusten en varias filas */
+  margin-top: 40px; /* Espacio superior */
+  gap: 30px; /* Espacio entre los cuadros */
+}
+
+.card { /* paar darle estilo a cada cuadro y el contenido" */
+  flex: 1;
+  max-width: 300px; /* Ancho máximo de cada cuadro */
+  min-width: 260px; /* Ancho mínimo de cada cuadro */
+  border: 2px solid transparent; /* Bordes transparentes */
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(222, 215, 187);
+}
+
+.card img { /* Imagenes en cada cuadro*/
+  height: 50px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.card h3 { /* Título de cada cuadro */
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card p { /* Texto dentro de cuadro */
+  font-size: 14px;
+  color: #444;
+}
+
+.card button { /* Botón de cada cuadro */
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #4c8c2b;
+  color: #4c8c2b;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.card button:hover { /* Efecto al pasar el mouse sobre el botón de cada cuadro */
+  background-color: #4c8c2b;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*para footer*/
+
+/* Fondo oscuro para el footer */
+.footer {
+  background-color: #202020;
+  color: #ccc;
+  padding: 40px 20px;
+}
+
+/* Contenedor principal del footer con flexbox */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cada columna individual del footer */
+.footer-column {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+/* Títulos en blanco */
+.footer-column h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Listas sin estilo y margen limpio */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+/* Elementos de la lista */
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+/* Estilo del texto “Síguenos” */
+.siguenos {
+  color: #ccc;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Estilo de los íconos sociales */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Título de newsletter */
+.newsletter-title {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Campos del formulario de newsletter */
+.newsletter-input,
+.name-fields input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 0.9em;
+}
+
+/* Agrupación de nombre y apellidos */
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+/* Campos de nombre y apellido */
+.name-fields input {
+  flex: 1;
+}
+
+/* Texto legal pequeño */
+.legal-text {
+  font-size: 0.75em;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+/* Link de "más información" */
+.legal-text a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive */
+  @media (max-width: 768px) {
+
+    /*menu*/
+
+    .navbar-collapse { 
+      background-color: white;
+      padding: 1rem;
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .btn-donar {
+      width: 100%;
+    }
+
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /* la parte de que es ampaz */
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .cear-section h1 {
+    font-size: 33px;
+    color: black; /* Color blanco para el texto */
+  }
+
+  .cear-section h2 {
+    font-size: 30px;
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block; /* Ocupa solo el espacio del título */
+    padding: 10px 14px; /* Espaciado interno para el fondo */
+    color: black; /* Color blanco para el texto */
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card button {
+    font-size: 13px;
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /*para footer*/
+
+.footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  }
+
+  
