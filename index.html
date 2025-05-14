@@ -12,45 +12,91 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./img/AMPaz.png" alt="AMPaz"> <!-- Logo de la organización que esta en el menu-->
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse justify-content-center" id="menuNav">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">CÓMO AYUDAR</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">QUÉ HACEMOS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">PERSONAS REFUGIADAS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">QUÉ DECIMOS</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">QUIÉNES SOMOS</a></li>
-            </ul>
-          </div>
-      
-          <a href="#" class="btn btn-donar d-none d-lg-block">DONAR</a>
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- LOGO + IDIOMA -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./img/AMPaz.png" alt="AMPaz" height="40">
+      </a>
 
+      <!-- Dropdown de idioma con Bootstrap -->
+      <div class="dropdown">
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+          <li><a class="dropdown-item" href="./index.html">Castellano</a></li>
+          <li><a class="dropdown-item" href="./english/front.html">Inglés</a></li>
+          <li><a class="dropdown-item" href="./català/ca_portada.html">Catalán</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">CÓMO AYUDAR</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">QUÉ HACEMOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PERSONAS REFUGIADAS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">QUÉ DECIMOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">QUIÉNES SOMOS</a></li>
+      </ul>
+    </div>
+
+    <!-- Botón Donar -->
+    <a href="#" class="btn btn-donar d-none d-lg-block">DONAR</a>
+  </div>
+</nav>
+
+<!--Slider-->
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/fondo.png" class="d-block w-100" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/refu.png" class="d-block w-100" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/azlo.png" class="d-block w-100" alt="Imagen 3">
+          </div>
+        </div>
+
+        <!-- Flechas -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    
       <!-- Contenedor principal de la sección -->
   <section class="cear-section">
     <!-- Título principal -->
-    <h1>AMPAZ - AYUDA AL REFUGIADO</h1>
-    <!-- Subtítulo con estilo destacado -->
-    <h2><B>QUÉ ES AMPAZ?</B></h2><br>
-      <p class="text">Se dedica a los derechos de igualdad y equidad en la migración y el refugio 
-        que buscan que todas las personas, sin importar de dónde vienen, 
-        sean tratadas con respeto y tengan las mismas oportunidades. 
-        La igualdad significa que todos deben ser tratados igual ante la ley, 
-        y la equidad significa ayudar más a quienes lo necesitan. 
-        También es importante evitar el rechazo o maltrato a los migrantes. Defender estos derechos ayuda a tener una sociedad más justa para todos.</p>
+    <h1 class="ampaz">AMPAZ - AYUDA AL REFUGIADO</h1>
 
     <!-- Contenedor de las tres columnas -->
     <div class="cards-container">
-      <!-- Tarjeta 1 -->
+      <!-- Cuadro 1 -->
       <div class="card">
         <img src="./img/ayuda.png" alt="Icono derecho de asilo" />
         <h3>EQUIPO DE AYUDA LEGAL</h3>
@@ -63,7 +109,7 @@
         <button> NUESTRA HISTORIA </button>
       </div>
 
-      <!-- Tarjeta 2 -->
+      <!-- Cuadro 2 -->
       <div class="card">
         <img src="./img/INTEGRACIÓN.PNG" alt="Icono refugio" />
         <h3>EQUIPO DE INTEGRACIÓN</h3>
@@ -77,7 +123,7 @@
         <button> ¿NOS AYUDAS? </button>
       </div>
 
-      <!-- Tarjeta 3 -->
+      <!-- Cuadro 3 -->
       <div class="card">
         <img src="./img/CONCIENTIZACIÓN.png" alt="Icono denuncias" />
         <h3>EQUIPO DE CONCIENTIZACIÓN</h3>
@@ -91,6 +137,7 @@
         <button> NUESTROS INFORMES </button>
       </div>
 
+      <!-- Cuadro 4 -->
       <div class="card">
         <img src="./img/investigación.png" alt="Icono denuncias" />
         <h3>EQUIPO DE IDEAS</h3>
@@ -103,14 +150,34 @@
         <button> NUESTROS INFORMES </button>
       </div>
     </div>
+
+        <!-- Subtítulo con estilo destacado -->
+    <h2 class="amp"><B>QUÉ ES AMPAZ?</B></h2><br>
+      <p class="text">Se dedica a los derechos de igualdad y equidad en la migración y el refugio 
+        que buscan que todas las personas, sin importar de dónde vienen, 
+        sean tratadas con respeto y tengan las mismas oportunidades. 
+        La igualdad significa que todos deben ser tratados igual ante la ley, 
+        y la equidad significa ayudar más a quienes lo necesitan. 
+        También es importante evitar el rechazo o maltrato a los migrantes. 
+        Defender estos derechos ayuda a tener una sociedad más justa para todos.</p>
   </section>
 
+  <!-- Sección de "Cómo ayudar" -->
 
-
-
-
-
-
+<section class="donation-section">
+    <h1>AYUDA A CREAR REFUGIO CON TU DONACIÓN</h1>
+    <p>
+      Cada <a href="./html/donacion.html" class="link-donativo">donativo</a> de quienes deciden colaborar con nuestra ONG es fundamental
+      para que las personas refugiadas y migrantes a las que atendemos reciban una atención integral y podamos cubrir sus necesidades más urgentes.
+    </p>
+    <p class="subtitulo">Quiero aportar</p> <!--Subtitulo-->
+    <div class="donation-buttons">
+      <button>30€</button>
+      <button>60€</button>
+      <button>120€</button>
+      <button>OTRA</button>
+    </div>
+  </section>
 
 
 <!-- Footer -->
@@ -179,10 +246,10 @@
 
         <!-- Newsletter (no funcional, solo visual) -->
         <p class="newsletter-title">Suscríbete a nuestra ONG</p>
-        <input type="email" placeholder="Email*" class="newsletter-input" />
+        <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- es para el correo -->
         <div class="name-fields">
-          <input type="text" placeholder="Nombre*" />
-          <input type="text" placeholder="Apellidos*" />
+          <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
+          <input type="text" placeholder="Apellidos*" /> <!-- es para los apellidos -->
         </div>
 
         <!-- Texto legal -->
@@ -190,7 +257,7 @@
           AMPaz podrá tratar mis datos personales para promover
           mi colaboración y el apoyo a sus campañas, envío de
           información de actividades y campañas por todos los
-          canales, electrónicos o no. <a href="#">Más información</a>
+          canales, electrónicos o no. <a href="">Más información</a>
         </p>
       </div>
 
