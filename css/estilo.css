@@ -72,7 +72,7 @@ body { /* Estilos generales para cuerpo */
   margin: 0; /* Elimina el margen por defecto */
   padding: 0; /* Elimina el padding por defecto */
   color: #222; 
-  background-image: url(../img/back1.png); /* Imagen de fondo */
+  background-image: url(../img/baack.png); /* Imagen de fondo */
   background-attachment: fixed; /* Fija la imagen al área del apartado */
   background-clip: content-box; /* Limita la imagen al contenido del apartado */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -99,7 +99,7 @@ body { /* Estilos generales para cuerpo */
   border-radius: 8px; /* Bordes redondeados */
   margin: 0 auto; /* Centra el cuadro horizontalmente */
   width: 50%; /* Ocupa el 50% del ancho del contenedor */
-  background-color: rgba(212, 228, 177, 0.5); /* Verde claro transparente */
+  background-color: rgb(222, 215, 190);
 }
 
 .ampaz:hover { /* Efecto al pasar el mouse sobre el cuadro "AMPAZ - ayuda al refugiado" */
@@ -133,7 +133,7 @@ body { /* Estilos generales para cuerpo */
   border-radius: 8px; /* Bordes redondeados */
   margin: 0 auto; /* Centra el cuadro horizontalmente */
   width: 30%; /* Ocupa el 50% del ancho del contenedor */
-  background-color: rgba(212, 228, 177, 0.5); /* Verde claro transparente */
+  background-color: rgb(222, 215, 190);
 }
 
 .amp:hover { /* Efecto al pasar el mouse sobre el cuadro " QUE ES AMPAZ" */
@@ -214,62 +214,96 @@ body { /* Estilos generales para cuerpo */
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*para la parte de subcategorías de "COMO AYUDAR, QUE HACEMOS, PERSONAS REFUGIADAS, QUE DECIMOS, QUIENES SOMOS, DONAR "*/
+
+.fil { /*es el contenedor*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*es para que se vea en 3 arriba y 3 abajo*/
+  gap: 10px; /* Espacio entre los cuadros */
+  max-width: 100%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el grid horizontalmente */
+  justify-items: center; /* Centra los cuadros dentro de cada celda */
+}
+
+.cart { /* Estilo de cada cuadro */
+    background-color: rgb(223, 218, 218); /* Fondo de color claro */
+    border-radius: 12px; /* Bordes redondeados de los cuadros*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra detrás de cada cuadro */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    text-align: center; /* Centra el texto que hay dentro de cada cuadro*/
+    transition: transform 0.2s ease; /* Transición suave */
+}
+
+.cart:hover { /* Efecto al pasar el cursor */
+  background-color: #e6ebb8; /* Cambia el color de fondo al pasar el mouse */
+  transform: scale(1.05); /* Aumenta el tamaño del cuadro */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más intensa */
+}
+
+.cart img { /* Imagen dentro de cada cuadro*/
+    width: 100%; /* Ancho completo del cuadro */
+    height: 150px;
+    object-fit: cover;
+}
+
+.cart p { /* Texto del cuadro*/
+    font-weight: bold;
+    color: green;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*Sección de "Como ayudar"*/
 
-.donation-section { /* Contenedor principal */
-  text-align: center; /*hara que el texto se vea centrado */
-  padding: 40px 20px; /* Espaciado interno */
-  background-color: #e6edc5; /* Fondo gris claro */
+.seccion-donacion { /* Contenedor principal */
+  background-color: #FFF8F0; /* color crema claro */
+  margin: 50px auto;
+  padding: 40px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* espacio entre texto y botón */
 }
 
-.donation-section h1 { /* Título principal */
-  color: #4d960f; /* verde fuerte */
-  font-weight: bold; 
-  font-size: 28px; 
-  margin-bottom: 10px; /* Espacio inferior */
+.contenido-donacion { /* Contenido de texto */
+  flex: 2; /* ocupa más espacio que el botón */
 }
 
-.donation-section p { /* Párrafo principal */
-  font-size: 18px;
-  max-width: 800px; /* es para que no se vea tan largo */
-  margin: 0 auto 20px auto; /* Espacio superior e inferior */
-  line-height: 1.6; /* Espacio entre líneas */
-}
-
-.link-donativo { /* Enlace subrayado en azul */
-  color: #0f2e96;
-  text-decoration: underline;
-}
-
-.subtitulo { /* Subtítulo */
+.titulo { /* Título principal */
+  color: #4c8c2b; /* verde */
+  font-size: 20px;
   font-weight: bold;
-  color: #4d960f;
-  margin-top: 30px;
   margin-bottom: 20px;
 }
 
-.donation-buttons { /* Botones de donación */
-  display: flex; /* Para alinear los botones en fila */
-  justify-content: center; /* Centra los botones */
-  gap: 20px; /* Espacio entre los botones */
-  flex-wrap: wrap; /* permite que bajen en pantallas pequeñas */
+.texto { /* Texto descriptivo */
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.donation-buttons button { /* efecto para botón de donación */
-  background-color: #4d960f;
+.boton-contenedor { /* Contenedor del botón */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-donar { /* Botón de donación */
+  background-color: #5a7d1f; /* verde */
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.boton-donar:hover {
+  background-color: rgb(62, 100, 62); /* tono más oscuro al pasar el cursor */
   color: white;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 20px 30px; /* Espaciado interno */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer; /* Cambia el cursor al pasar el mouse */
-  min-width: 120px; 
-  transition: background-color 0.3s ease; /* es para que el efecto sea suave */
-}
-
-.donation-buttons button:hover { /* Efecto al pasar el mouse sobre el botón de donación */
-  background-color: #3b7e0b; 
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -296,10 +330,18 @@ body { /* Estilos generales para cuerpo */
 }
 
 .footer-column h3 { /* Títulos en blanco */
-  color: #fff; 
+  color: #287d24; 
   font-weight: bold; /* Peso de la fuente */
   font-size: 1em; 
   margin-bottom: 10px; 
+}
+
+.grinish {
+  color: #b7d18a;
+}
+
+.green {
+  color: #7d9172;
 }
 
 .footer-column ul { /* Listas sin estilo y margen limpio */
@@ -361,18 +403,6 @@ body { /* Estilos generales para cuerpo */
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   /* Responsive */
   @media (max-width: 768px) {
 
@@ -404,21 +434,21 @@ body { /* Estilos generales para cuerpo */
 
   /* la parte de que es ampaz? */
 
-  .cards-container {
+  .cards-container { /* Contenedor de cada cuadro */
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  .card { /* Estilo de cada cuadro */
     max-width: 90%;
   }
 
-  .cear-section h1 {
+  .cear-section h1 { /* Título principal "AMPAZ - AYUDA AL REFUGIADO"  */
     font-size: 33px;
     color: black; /* Color blanco para el texto */
   }
 
-  .cear-section h2 { 
+  .cear-section h2 { /* Subtítulo con línea debajo "QUE ES AMPAZ?"*/
     font-size: 30px;
     border-radius: 10px; /* Bordes redondeados */
     display: inline-block; /* Ocupa solo el espacio del título */
@@ -426,57 +456,101 @@ body { /* Estilos generales para cuerpo */
     color: black; /* Color blanco para el texto */
   }
 
-  .card h3 {
+  .amp{ /* Efecto al pasar el mouse sobre el cuadro "QUE ES AMPAZ?" */
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .text { /* para la descrpcion de "QUE ES AMPAZ?"*/
+    width: 90%;
+  }
+
+  .text:hover { /* Efecto al pasar el mouse sobre el cuadro "QUE ES AMPAZ?" */
+    background-color: rgb(178, 198, 164);
+    color: black;
+    border-color: orange;
+    transition: background-color 0.2s, color 0.3s, border-color 0.3s;
+  }
+
+  .card h3 { /* Título de cada cuadro */
     font-size: 14px;
   }
 
-  .card p {
+  .card p { /* Texto dentro de cuadro */
     font-size: 13px;
   }
 
-  .card button {
+  .card button { /* Botón de cada cuadro */
     font-size: 13px;
+  }
+
+  .ampaz { /* Estilo del cuadro "AMPAZ - ayuda al refugiado" */
+    width: 80%;
+    margin-bottom: 10px;
   }
 
   /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
   /*para footer*/
 
-.footer-container {
-    flex-direction: column;
-    align-items: flex-start;
+  .newsletter-input,
+  .name-fields input { /* Campos del formulario de newsletter */
+    margin-right: 16px;
+    box-sizing: border-box; 
+  }
+
+  .footer-column form {
+    display: flex;
+    align-items: center;
   }
 
   .name-fields {
-    flex-direction: column;
-  }
-
-  .footer-column {
-    width: 100%;
-    margin-bottom: 30px;
+    justify-content: center;
   }
 
   /*--------------------------------------------------------------------------------------------------------------------------------*/
   
+  /*para la parte de subcategorías de "COMO AYUDAR, QUE HACEMOS, PERSONAS REFUGIADAS, QUE DECIMOS, QUIENES SOMOS, DONAR "*/
+    
+  .fil {
+        grid-template-columns: repeat(2, 1fr); /* 2 columna en móviles */
+    }
+
+    .cart img {
+        height: 180px; /* Imagen un poco más alta para móvil */
+    }
+
+    .cart p {
+        font-size: 1.1rem;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
   /*Sección de "Como ayudar"*/
 
-  .donation-section h1 {
-    font-size: 22px;
+  .seccion-donacion {
+    flex-direction: column; /* apila texto y botón verticalmente */
+    text-align: center;
+    padding: 30px 20px;
+    width: 90%; /* ocupa el 90% del ancho */
   }
 
-  .donation-section p {
-    font-size: 16px;
+  .boton-contenedor {
+    margin-top: 20px;
   }
 
-  .donation-buttons {
-    flex-direction: column;
-    align-items: center;
+  .titulo {
+    font-size: 18px;
   }
 
-  .donation-buttons button {
-    width: 80%;
-    max-width: 300px;
-    margin-bottom: 10px;
+  .texto {
+    font-size: 15px;
+  }
+
+  .boton-donar {
+    width: 100%; /* botón ocupa todo el ancho disponible */
+    max-width: 200px;
   }
 
 
