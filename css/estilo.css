@@ -4,6 +4,10 @@
     gap: 1.7rem; /* Espacio entre los elementos de la barra de navegación */
   }
 
+.navbar { /* Estilo para la barra de navegación */
+  background-color: rgb(237, 229, 212); /* Color de fondo blanco */
+}
+
   .nav-link { /* Estilo para los enlaces de navegación */
     font-weight: 600; /* Peso de la fuente */
     color: black; /* Color del texto */
@@ -28,15 +32,7 @@
     height: 40px; /* Altura del logo */
   }
 
-  .nav-item { /* Estilo para cada opción del menú */
-    border: 1px solid #4c8c2b; /* Borde verde */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 5px 8px; /* Espaciado interno */
-    background-color: rgb(225, 233, 225); /* Fondo blanco */
-    transition: background-color 0.3s, color 0.3s; /* Transición para efectos */
-  }
-
-  .nav-item:hover { /* Efecto al pasar el mouse sobre cada opción */
+  .nav-ite:hover { /* Efecto al pasar el mouse sobre cada opción */
     background-color: #a6c08d; /* Fondo verde claro */
     color: black; /* Color del texto */
   }
@@ -54,7 +50,7 @@
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*Slider*/
+/*Slider en la portada*/
 
 .carousel-item img { /* El contenedor del slider ocupa 50% del alto de pantalla */
   object-fit: cover;
@@ -79,6 +75,7 @@ body { /* Estilos generales para cuerpo */
   background-position: center; /* Centra la imagen en la pantalla */
   flex-wrap: wrap;  /* Permite que los elementos se ajusten en pantallas pequeñas */
   background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .cear-section { /* Sección principal "AMPAZ - AYUDA AL REFUGIADO" */
@@ -93,18 +90,18 @@ body { /* Estilos generales para cuerpo */
 }
 
 .ampaz {
-  color: #1c4706;
-  border: 2px solid #607e52; /* Borde verde oscuro */
+  color: rgb(217, 217, 35);
+  border: rgb(152, 152, 223); /* Borde verde oscuro */
   padding: 10px; /* Espaciado interno */
   border-radius: 8px; /* Bordes redondeados */
   margin: 0 auto; /* Centra el cuadro horizontalmente */
   width: 50%; /* Ocupa el 50% del ancho del contenedor */
-  background-color: rgb(222, 215, 190);
+  background-color: rgba(209, 96, 40, 0.882);
 }
 
 .ampaz:hover { /* Efecto al pasar el mouse sobre el cuadro "AMPAZ - ayuda al refugiado" */
   background-color: #b7d18a;
-  color: green;
+  color: rgb(6, 159, 6);
   border-color: #4c8c2b;
   transition: background-color 0.2s, color 0.3s, border-color 0.3s;
 }
@@ -133,7 +130,7 @@ body { /* Estilos generales para cuerpo */
   border-radius: 8px; /* Bordes redondeados */
   margin: 0 auto; /* Centra el cuadro horizontalmente */
   width: 30%; /* Ocupa el 50% del ancho del contenedor */
-  background-color: rgb(222, 215, 190);
+  background-color: rgb(182, 215, 160);
 }
 
 .amp:hover { /* Efecto al pasar el mouse sobre el cuadro " QUE ES AMPAZ" */
@@ -159,7 +156,7 @@ body { /* Estilos generales para cuerpo */
   padding: 10px;
   text-align: center;
   margin: 0 auto;
-  background-color: rgb(222, 215, 187);
+  background-color: rgb(181, 201, 136);
 }
 
 .card img { /* Imagenes en cada cuadro*/
@@ -223,15 +220,23 @@ body { /* Estilos generales para cuerpo */
   max-width: 100%; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centra el grid horizontalmente */
   justify-items: center; /* Centra los cuadros dentro de cada celda */
+  align-items: stretch; /* Hace que todas las celdas tengan la misma altura */
 }
 
 .cart { /* Estilo de cada cuadro */
-    background-color: rgb(223, 218, 218); /* Fondo de color claro */
-    border-radius: 12px; /* Bordes redondeados de los cuadros*/
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra detrás de cada cuadro */
-    overflow: hidden; /* Evita que el contenido sobresalga */
-    text-align: center; /* Centra el texto que hay dentro de cada cuadro*/
-    transition: transform 0.2s ease; /* Transición suave */
+  background-color: rgb(223, 218, 218); /* Fondo de color claro */
+  border-radius: 12px; /* Bordes redondeados de los cuadros*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.10); /* Sombra detrás de cada cuadro */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+  text-align: center; /* Centra el texto que hay dentro de cada cuadro*/
+  transition: transform 0.2s ease; /* Transición suave */
+  width: 70%; /* Ocupa todo el ancho de la celda del grid */
+  height: 100%; /* Ocupa toda la altura de la celda del grid */
+  display: flex; /* Para alinear el contenido dentro del cuadro */
+  flex-direction: column;
+  justify-content: space-between; /*es para que el contenido se vea verticalmente bien*/
+  min-width: 0; /* Previene desbordamiento */
+  box-sizing: border-box;
 }
 
 .cart:hover { /* Efecto al pasar el cursor */
@@ -402,59 +407,279 @@ body { /* Estilos generales para cuerpo */
   color: #1184dc;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*para la pagina de donacion*/
+
+.portada {
+  background-image: url("../img_dona/fondo.png");
+  background-size: cover; /* Tamaño de la imagen */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir el fondo */
+  width: 100%; /* Esto hace que ocupe toda la anchura de la pantalla */
+  height: 100%; /* Esto hace que ocupe toda la altura de la pantalla */
+  position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+}
+
+.segundofondo{
+    background-color: rgb(203, 231, 178);
+    color: #5d9c23;
+    
+}
+.textomedio{
+    text-align: center;
+}
+
+.margen-3 {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.portada > .row {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima del pseudo-elemento */
+}
+
+
+/* FONDO DE LA COLUMNA DERECHA */
+.fondocolordonar{
+      background-color: rgba(161, 159, 159, 0.50); /*EL 0.50 es el nivel de transparencia*/
+    }
+.margenizquierdo{
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* CONTENIDO COL-6 IZQUIERDA */
+.margenderecho{
+    color: white;
+    display: flex;               /* Activar Flexbox */
+    justify-content: center;     /* Centrar horizontalmente */
+    align-items: center;         /* Centrar verticalmente */
+    text-align: center;          /* Centrar el texto dentro del div */
+    flex-direction: column;      /* Apilar elementos en columna */
+    padding: 20px;               /* Espaciado interior */
+    box-sizing: border-box;      /* Incluye padding dentro del height */
+}
+
+/* LOS BOTONES */
+
+/* Botones nav-link comunes */
+.nav-pills .nav-link {
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Puntual botón (inactivo) */
+
+.nav-pills .btn-puntual {
+    border: 3px solid #4c8c2b !important;
+    width: 100%;  /* Este es el tamaño de la fila donde esta la info */
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* 
+ColoresSubbotones */
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Opcional, para que se adapten en pantallas pequeñas */
+}
+.nav-pills .nav-link {
+  color: #599b5b; /*Color numero*/
+  background-color: white;
+  border: 2px solid #337835;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #4CAF50 !important;
+}
+
+.nav-pills .nav-link.active::after {
+  bottom: -10px;
+  border-width: 10px;
+  border-color: #4CAF50 transparent transparent transparent;
+}
+
+/* ESTO ES FONDO DE LA COLUMNA DERECHA DESCRIPCION */
+.fondocolor{
+    background-color: rgba(183, 156, 145, 0.6);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.margen{
+    margin-top: 2%;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+
+  width: 80%;                /* El input ocupa el 80% del ancho de su contenedor */
+  padding: 10px;             /* Espacio interior dentro del input */
+  margin-bottom: 15px;       /* Separación inferior entre inputs */
+  border: 1px solid #ccc;    /* Borde gris claro */
+  border-radius: 5px;        /* Bordes redondeados */
+  font-size: 14px;           /* Tamaño de la letra */
+
+  display: block;            /* Se comporta como un bloque para poder centrarlo */
+  margin-left: auto;         /* Margen izquierdo automático para centrar */
+  margin-right: auto;        /* Margen derecho automático para centrar */
+}
+
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+/* CONTENIDO DEL AUTORIZACIÓN */
+.checkbox {
+    margin-bottom: 10px;      /* Separación inferior entre checkboxes */
+    font-weight: 700; /* o puedes usar 'bold' */
+}
+
+.checkbox input {
+  margin-right: 8px;
+  
+}
+.checkbox label {
+  color: white; /* Texto en blanco */
+}
+
+.checkbox a {
+  color: #5d9c23;
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  text-decoration: underline;
+}
+
+.btn-ayudar {
+  display: inline-block;
+  width: 60%;
+  padding: 12px 12px;
+  background-color: #5d9c23;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+
+   /*Los dos elementos hacen que quede centrado horizontalmente en su contenedor. */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* permite que el elemento acepte márgenes automáticos para centrar. */
+}
+
+.btn-ayudar:hover {
+  background-color: #4b851d;
+}
+.margen2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ESTILOS DEL TEXTO  */
+.margen2 h3 {
+  text-align: center;
+  color: #a2c287;
+}
+.tituloaportacion{
+  color: #a2c287;
+  text-align: center;/* Centrado */
+  margin-bottom: 30px;/* Más espacio abajo */
+  letter-spacing: 0.5px;/* Ligero espacio entre letras */
+  line-height: 1.2;/* Comodidad visual */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.15);/* Sombra suave para profundidad */
+  border-bottom: 3px solid #5d9c23;/* Línea decorativa debajo */
+  padding-bottom: 8px;/* Separación de la línea */
+}
+.accordion-flush .accordion-item {
+  border-bottom: 3px solid orange;
+}
+
+
 
   /* Responsive */
   @media (max-width: 768px) {
 
-    .carousel-item img {
-        height: 35vh; /* Un poco menos para móviles */
-        object-fit: contain; /* Para que no recorte tanto */
-      }
+/*Slider en la portada*/
 
-  /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.carousel-item img {
+  height: 40vh; /* Un poco menos para móviles */
+  object-fit: contain; /* Para que no recorte tanto */
+  margin: 0 auto; /* Centra la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
   
-    /*menu*/
+/*menu*/
 
-    .navbar-collapse { /* Estilo para el menú colapsable */
-      background-color: white;
-      padding: 1rem;
-    }
+.navbar-collapse { /* Estilo para el menú colapsable */
+  background-color: white;
+  padding: 1rem;
+}
 
-    .navbar-nav { /* Estilo para los enlaces de navegación */
-      flex-direction: column;
-      gap: 1rem;
-      text-align: center;
-    }
+.navbar-nav { /* Estilo para los enlaces de navegación */
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
 
-    .btn-donar { /* Estilo para el botón de donar */
-      width: 30%;
-    }
+.btn-donar { /* Estilo para el botón de donar */
+  width: 30%;
+}
 
-  /*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-  /* la parte de que es ampaz? */
+/* la parte de que es ampaz? */
 
-  .cards-container { /* Contenedor de cada cuadro */
-    flex-direction: column;
-    align-items: center;
-  }
+.cards-container { /* Contenedor de cada cuadro */
+  flex-direction: column;
+  align-items: center;
+}
 
-  .card { /* Estilo de cada cuadro */
-    max-width: 90%;
-  }
+.card { /* Estilo de cada cuadro */
+  max-width: 90%;
+}
 
-  .cear-section h1 { /* Título principal "AMPAZ - AYUDA AL REFUGIADO"  */
-    font-size: 33px;
-    color: black; /* Color blanco para el texto */
-  }
+.cear-section h1 { /* Título principal "AMPAZ - AYUDA AL REFUGIADO"  */
+  font-size: 33px;
+  color: black; /* Color blanco para el texto */
+}
 
-  .cear-section h2 { /* Subtítulo con línea debajo "QUE ES AMPAZ?"*/
-    font-size: 30px;
-    border-radius: 10px; /* Bordes redondeados */
-    display: inline-block; /* Ocupa solo el espacio del título */
-    padding: 10px 14px; /* Espaciado interno para el fondo */
-    color: black; /* Color blanco para el texto */
-  }
+.cear-section h2 { /* Subtítulo con línea debajo "QUE ES AMPAZ?"*/
+  font-size: 30px;
+  border-radius: 10px; /* Bordes redondeados */
+  display: inline-block; /* Ocupa solo el espacio del título */
+  padding: 10px 14px; /* Espaciado interno para el fondo */
+  color: black; /* Color blanco para el texto */
+}
 
   .amp{ /* Efecto al pasar el mouse sobre el cuadro "QUE ES AMPAZ?" */
     width: 80%;
@@ -523,7 +748,6 @@ body { /* Estilos generales para cuerpo */
     .cart p {
         font-size: 1.1rem;
     }
-}
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -553,7 +777,28 @@ body { /* Estilos generales para cuerpo */
     max-width: 200px;
   }
 
+  /*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*para la pagina de donacion*/
 
+  .col-6 {
+    height: auto;
+    padding: 20px;
   }
 
+  .margen2 {
+    padding: 20px;
+  }
+
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  }
   
