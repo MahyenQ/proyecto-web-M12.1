@@ -109,7 +109,7 @@ body { /* Estilos generales para cuerpo */
   font-size: 35px;
   font-weight: bold;
   border-radius: 15px;
-  border: 2px solid #f0eed1;
+  border: 1px solid #f0eed1;
 }
 
 .ampaz:hover { /* Efecto al pasar el mouse sobre el cuadro "AMPAZ - ayuda al refugiado" */
@@ -127,7 +127,7 @@ body { /* Estilos generales para cuerpo */
   text-align: center;
   color: #fff2d3; /* Color blanco para el texto */
   border-radius: 15px;
-  border: 2px solid #f0eed1;
+  border: 1px solid #f0eed1;
   margin-top: 30px;
 }
 
@@ -253,9 +253,9 @@ body { /* Estilos generales para cuerpo */
 }
 
 .cart { /* Estilo de cada cuadro */
-  background-color: rgb(238, 213, 166); /* Fondo de color claro */
+  background-color: rgb(213, 248, 213); /* Fondo de color claro */
   border-radius: 10px; /* Bordes redondeados de los cuadros*/
-  border: 2px solid #e6e4c9;
+  border: 0.5px solid #e6e4c9;
   box-shadow: 0 10px 12px rgb(206, 126, 28); /* Sombra detrás de cada cuadro */
   overflow: hidden; /* Evita que el contenido sobresalga */
   text-align: center; /* Centra el texto que hay dentro de cada cuadro*/
@@ -670,6 +670,21 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.img_01 {
+  width: 20%;
+  float: left;
+  margin-right: 20px;
+  display: block;
+}
+
+.img_02 {
+  width: 10%;
+  float: right;
+  margin-right: 20px;
+  display: block;
+  margin-left: 25px;
 }
 
 /* Banner con fondo */
