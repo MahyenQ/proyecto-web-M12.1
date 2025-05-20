@@ -10,144 +10,178 @@
     <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
     <!--CSS--><link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body>
+  <body>
+    <div class="contenido-blanco">
 
-<nav class="navbar navbar-expand-lg border-bottom">
-  <div class="container d-flex align-items-center justify-content-between">
-    
-    <!-- LOGO + IDIOMA -->
-    <div class="d-flex align-items-center gap-3">
-      <a class="navbar-brand d-flex align-items-center" href="../index.html">
-        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+    <nav class="navbar navbar-expand-lg border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        
+        <!-- LOGO + IDIOMA -->
+        <div class="d-flex align-items-center gap-3">
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
 
-      <!-- Dropdown de idioma con Bootstrap -->
-      <div class="dropdown">
-        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
-          Idioma
+          <!-- Dropdown de idioma con Bootstrap -->
+          <div class="dropdown">
+            <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+              Idioma
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+              <li><a class="dropdown-item" href="../html/comoayudar.html">Castellano</a></li>
+              <li><a class="dropdown-item" href="../english/help.html">Inglés</a></li>
+              <li><a class="dropdown-item" href="../català/ca_ayudar.html">Catalán</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
-          <li><a class="dropdown-item" href="../html/comoayudar.html">Castellano</a></li>
-          <li><a class="dropdown-item" href="../english/help.html">Inglés</a></li>
-          <li><a class="dropdown-item" href="../català/ca_ayudar.html">Catalán</a></li>
-        </ul>
+
+        <!-- Menú principal -->
+        <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-ite"><a class="nav-link" href="../html/comoayudar.html">CÓMO AYUDAR</a></li>
+            <li class="nav-ite"><a class="nav-link" href="../html/quehacemos.html">QUÉ HACEMOS</a></li>
+            <li class="nav-ite"><a class="nav-link" href="../html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li>
+            <li class="nav-ite"><a class="nav-link" href="../html/colaborar.html">COLABORAR</a></li>
+            <li class="nav-ite"><a class="nav-link" href="../html/quienessomos.html">QUIÉNES SOMOS</a></li>
+          </ul>
+        </div>
+
+        <!-- Botón Donar -->
+        <a href="./html/donacion.html"><button class="boton-donar">Donar</button></a>
       </div>
-    </div>
+    </nav>
 
-    <!-- Botón hamburguesa -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <section class="seccion-programas">
+      <!-- Título principal -->
+      <h1 class="ti-pri">
+        Programas de <span class="texto-verde">Acción Social</span>
+      </h1>
 
-    <!-- Menú principal -->
-    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-ite"><a class="nav-link" href="../html/comoayudar.html">CÓMO AYUDAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/quehacemos.html">QUÉ HACEMOS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/colaborar.html">COLABORAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/quienessomos.html">QUIÉNES SOMOS</a></li>
-      </ul>
-    </div>
-
-    <!-- Botón Donar -->
-    <a href="./html/donacion.html"><button class="boton-donar">Donar</button></a>
-  </div>
-</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-
-        <!-- Columna: Para Empresas -->
-        <div class="footer-column">
-          <h3>PARA EMPRESAS</h3>
-          <ul>
-            <li>Alianzas con empresas solidarias</li>
-            <li>Proyectos solidarios</li>
-            <li>Voluntariado corporativo de empresas</li>
-            <li>Haz socia a tu empresa</li>
-            <li>Contratar personas refugiadas</li>
-            <li>Donación de empresas</li>
-            <li>Otras formas</li>
-            <li>Ventajas fiscales</li>
-          </ul>
-          <h3>CONTACTA</h3>
-          <ul>
-            <li>Nuestras sedes</li>
-          </ul>
+      <!-- Contenedor de tarjetas -->
+      <div class="contenedor-cuad">
+        <!-- Tarjeta 1 -->
+        <div class="cuad">
+          <img src="mov.png" alt="Educación" class="icono">
+          <h2 class="titulo-cuad">Educación</h2>
+          <p class="texto-cuad">Facilitamos que chicas, chicos, adolescentes y jóvenes, continúen sus estudios para que puedan tener un futuro con más oportunidades.</p>
         </div>
 
-        <!-- Columna: Para Particulares -->
-        <div class="footer-column">
-          <h3>PARA PARTICULARES</h3>
-          <ul>
-            <li>Hazte Socio/a de la ONG</li>
-            <li>Donar a nuestra ONG</li>
-            <li>Fondo Solidario de Emergencia</li>
-            <li>Voluntariado</li>
-            <li>Infórmate</li>
-            <li>Otras formas de colaborar</li>
-          </ul>
+        <!-- Tarjeta 2 -->
+        <div class="cuad">
+          <img src="img/formacion.png" alt="Formación y empleo" class="icono">
+          <h2 class="titulo-cuad">Formación y empleo</h2>
+          <p class="texto-cuad">Ofrecemos oportunidades formativas a jóvenes para que puedan mejorar las competencias necesarias para acceder a un puesto de trabajo.</p>
         </div>
 
-        <!-- Columna: Áreas de trabajo y más -->
-        <div class="footer-column">
-          <h3>AREAS DE TRABAJO</h3>
-          <ul><li>Nuestros Proyectos</li></ul>
-          <h3>ACTUALIDAD</h3>
-          <ul>
-            <li>Noticias</li>
-            <li>Campañas</li>
-          </ul>
-          <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li>
-          <li class="grinish"><B>OFERTAS DE EMPLEO</B></li>
-          <li class="grinish"><B>PRENSA</B></li>
-          <li class="grinish"><B>CANAL DE DENUNCIAS</B></li>
+        <!-- Tarjeta 3 -->
+        <div class="cuad">
+          <img src="img/centros.png" alt="Centros de acogida" class="icono">
+          <h2 class="titulo-cuad">Centros de acogida</h2>
+          <p class="texto-cuad">Acompañamos a menores, jóvenes tutelados/as y extutelados/as en su camino hacia una vida autónoma e independiente.</p>
         </div>
 
-        <!-- Columna: Redes sociales y newsletter -->
-        <div class="footer-column">
-          <p class="siguenos">Síguenos:</p>
-          <div class="social-icons">
-            <!-- Iconos usando Bootstrap Icons -->
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-telegram"></i>
+        <!-- Tarjeta 4 -->
+        <div class="cuad">
+          <img src="img/valores.png" alt="Educación en valores" class="icono">
+          <h2 class="titulo-cuad">Educación en valores</h2>
+          <p class="texto-cuad">Promovemos el compromiso solidario de jóvenes para fomentar su pensamiento crítico y su activismo social.</p>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="cuad">
+          <img src="img/tecnoadicciones.png" alt="Prevención de tecnoadicciones" class="icono">
+          <h2 class="titulo-cuad">Prevención de tecnoadicciones</h2>
+          <p class="texto-cuad">Usamos el entorno digital como medio para educar a jóvenes sobre el uso saludable de la tecnología y reducir los usos abusivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+
+          <!-- Columna: Para Empresas -->
+          <div class="footer-column">
+            <h3>PARA EMPRESAS</h3>
+            <ul>
+              <li>Alianzas con empresas solidarias</li>
+              <li>Proyectos solidarios</li>
+              <li>Voluntariado corporativo de empresas</li>
+              <li>Haz socia a tu empresa</li>
+              <li>Contratar personas refugiadas</li>
+              <li>Donación de empresas</li>
+              <li>Otras formas</li>
+              <li>Ventajas fiscales</li>
+            </ul>
+            <h3>CONTACTA</h3>
+            <ul>
+              <li>Nuestras sedes</li>
+            </ul>
           </div>
 
-          <!-- Newsletter (no funcional, solo visual) -->
-          <p class="newsletter-title">Suscríbete a nuestra ONG</p>
-          <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- es para el correo -->
-          <div class="name-fields">
-            <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
-            <input type="text" placeholder="Apellidos*" /> <!-- es para los apellidos -->
+          <!-- Columna: Para Particulares -->
+          <div class="footer-column">
+            <h3>PARA PARTICULARES</h3>
+            <ul>
+              <li>Hazte Socio/a de la ONG</li>
+              <li>Donar a nuestra ONG</li>
+              <li>Fondo Solidario de Emergencia</li>
+              <li>Voluntariado</li>
+              <li>Infórmate</li>
+              <li>Otras formas de colaborar</li>
+            </ul>
           </div>
 
-          <!-- Texto legal -->
-          <p class="legal-text">
-            <span class="green">AMPaz</span> podrá tratar mis datos personales para promover
-            mi colaboración y el apoyo a sus campañas, envío de
-            información de actividades y campañas por todos los
-            canales, electrónicos o no. <a href="">Más información</a>
-          </p>
-        </div>
+          <!-- Columna: Áreas de trabajo y más -->
+          <div class="footer-column">
+            <h3>AREAS DE TRABAJO</h3>
+            <ul><li>Nuestros Proyectos</li></ul>
+            <h3>ACTUALIDAD</h3>
+            <ul>
+              <li>Noticias</li>
+              <li>Campañas</li>
+            </ul>
+            <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li>
+            <li class="grinish"><B>OFERTAS DE EMPLEO</B></li>
+            <li class="grinish"><B>PRENSA</B></li>
+            <li class="grinish"><B>CANAL DE DENUNCIAS</B></li>
+          </div>
 
-      </div>
+          <!-- Columna: Redes sociales y newsletter -->
+          <div class="footer-column">
+            <p class="siguenos">Síguenos:</p>
+            <div class="social-icons">
+              <!-- Iconos usando Bootstrap Icons -->
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-telegram"></i>
+            </div>
+
+            <!-- Newsletter (no funcional, solo visual) -->
+            <p class="newsletter-title">Suscríbete a nuestra ONG</p>
+            <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- es para el correo -->
+            <div class="name-fields">
+              <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
+              <input type="text" placeholder="Apellidos*" /> <!-- es para los apellidos -->
+            </div>
+
+            <!-- Texto legal -->
+            <p class="legal-text">
+              <span class="green">AMPaz</span> podrá tratar mis datos personales para promover
+              mi colaboración y el apoyo a sus campañas, envío de
+              información de actividades y campañas por todos los
+              canales, electrónicos o no. <a href="">Más información</a>
+            </p>
+          </div>
+
+        </div>
     </footer>
       <!--Bootrstrap--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>

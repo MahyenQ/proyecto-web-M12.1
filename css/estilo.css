@@ -707,8 +707,91 @@ label {
 
 /*PARA LA PAGINA COMO AYUDAR*/
 
+.seccion-programas { /* es la sección que contiene el título y los cuadros */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ti-pri { /* Título principal "Programas de acción social" */
+  font-size: 35px;
+  color: black;
+}
+
+.texto-verde { /* Parte del título en color verde "acción social" */
+  color: #9eb800;
+}
+
+.contenedor-cuad { /* Contenedor de tarjetas en grid */
+  display: grid; /* es para que los cuadros se alineen en una cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /*hace que los cuadros se adapten al tamaño de la pantalla */
+  gap: 20px; /* Espacio entre cuadros */
+  margin-top: 30px; /* Espacio entre el título y los cuadros */
+}
+
+.cuad { /* Cada tarjeta */
+  background-color: white; 
+  border-radius: 12px; /* Bordes redondeados de cada cuadro*/
+  border: 2px solid #9eb800; /* Borde verde de cada cuadro*/
+  padding: 20px; /* Espacio interno de cada cuadro */
+  text-align: center; /* Alineación del texto al centro */
+  box-shadow: 10px 15px 16px 0 #9eb800; /* para que cada cuadro tenga una sombra */
+  position: relative; /* para que los cuadros se posicione correctamente */
+  overflow: hidden; /* para que el contenido no se desborde */
+  transition: box-shadow 0.3s; /* para que la sombra cambie al pasar el ratón */
+}
 
 
+.cuad::before { /* Efecto de fondo al pasar el ratón */
+  content: ""; /* para que el efecto funcione del hover para cada cuadro, si esto no funcionará el efecto*/
+  position: absolute; /* para que el efecto se posicione correctamente */
+  left: 0; /* para que el efecto no se vea solo en la parte derecha*/
+  bottom: -100%; /* para que el efecto este en todo el cuadro */
+  width: 100%; /* para que el efecto ocupe todo el cuadro */
+  height: 100%; /* para que el efecto ocupe todo el cuadro */
+  background: linear-gradient(0deg, #7a9351 0%, #a9d770 100%); 
+  transition: bottom 0.4s cubic-bezier(0.4,0,0.2,1); /* para que el efecto haga un efecto de deslizamiento y que salga de la parte inferior en tan solo 0.4 segundos y cubric-bezier es para que el efecto sea más suave */
+  pointer-events: none; /* para que el efecto no interfiera con el ratón */
+}
+
+.cuad:hover::before { /* para que el efecto cambie al pasar el ratón y que salga de la parte inferior */
+  bottom: 0;
+}
+
+.cuad:hover .titulo-cuad { /* para que el título cambie de color al pasar el ratón para el efecto hover y que el texto se mantenga en centro */
+  position: absolute; /* para que el título se mantenga en el centro del cuadro */
+  top: 50%; /*para que haya un espacio entre el borde superior y el título */
+  left: 50%; /*para que haya un espacio entre el borde izquierdo y el título */
+  transform: translate(-50%, -50%); /* para que se transforme el título y se mantenga en el centro del cuadro y que no se mueva al pasar el ratón */
+  color: white; /* para que el título cambie de color al pasar el ratón */
+  font-size: 30px; /* para que el título sea más grande al pasar el ratón */
+  width: 100%; 
+  text-align: center; /* para que el título se mantenga en el centro del cuadro */
+  display: block; /* para que el titulo se mantenga en el centro del cuadro */
+}
+
+.cuad:hover .texto-cuad { 
+  display: none; /* Ocultar texto e icono al pasar el ratón */
+}
+
+.cuad:hover .icono { /* Para que el icono se mantenga en el centro del cuadro */
+  top: 20%;
+}
+
+.icono { /* Iconos de las tarjetas */
+  width: 100px; /* Tamaño de los iconos */
+  margin-bottom: 10px; /* Espacio entre el icono y el título */
+}
+
+.titulo-cuad { /* Título de los cuadros */
+  font-size: 25px; /* Tamaño del título en el cuadro*/
+  color: #9eb800; /* Color del título en el cuadro*/
+}
+
+.texto-cuad { /* Texto de la tarjeta */
+  font-size: 14px; /* Tamaño del texto en el cuadro*/
+  color: #849c65;
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -837,7 +920,6 @@ label {
 /*menu*/
 
 .navbar-collapse { /* Estilo para el menú colapsable */
-  background-color: white;
   padding: 1rem;
 }
 
@@ -1015,9 +1097,30 @@ label {
 
   /*PARA LA PAGINA COMO AYUDAR*/
 
+  .ti-pri { /* Título principal */
+    font-size: 24px;
+    text-align: center;
+  }
 
+  .cuad::before { /* Efecto de fondo al pasar el ratón */
+    bottom: -100%;
+  }
 
+  .cuad:hover::before { /* Efecto de fondo al pasar el ratón y que salga de la parte inferior */
+    bottom: 0;
+  }
 
+  .contenedor-cuad { /* Contenedor de tarjetas en grid que hace que los cuadros se alineen */
+    grid-template-columns: 1fr;
+  }
+
+  .cuad { /* Cada cuadro */
+    padding: 15px;
+  }
+
+  .icono { /* Iconos de los cuadros*/
+    width: 80px;
+  }
 
   /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
