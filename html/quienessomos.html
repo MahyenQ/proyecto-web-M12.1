@@ -4,66 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quienes somos?</title>
-    <link rel="icon" type="img/png" href="../img_quienesomos/somos.png">
+    <!--es para el icono del la pagina --><link rel="icon" type="img/png" href="../img_quienesomos/somos.png">
     <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
     <!-- LINK BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- LINK CSS --><link rel="stylesheet" href="../css/estilo.css"/>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg border-bottom">
+<!-- Menu -->
+<nav class="navbar navbar-expand-lg border-bottom">
   <div class="container d-flex align-items-center justify-content-between">
     
     <!-- LOGO + IDIOMA -->
     <div class="d-flex align-items-center gap-3">
       <a class="navbar-brand" href="../index.html">
-        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a> <!-- Muestra el logo y el nombre de la ONG, y lleva al inicio al hacer clic -->
 
-      <!-- Dropdown de idioma con Bootstrap -->
+      <!-- Dropdown de idioma con Bootstrap-->
       <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
         <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
           Idioma
-        </button>
+        </button> <!-- Botón que muestra el menú de idiomas al hacer clic -->
         <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
-          <li><a class="dropdown-item" href="../html/quienessomos.html">Castellano</a></li>
-          <li><a class="dropdown-item" href="../english/weare.html">Inglés</a></li>
-          <li><a class="dropdown-item" href="../català/ca_som.html">Catalán</a></li>
+          <li><a class="dropdown-item" href="./quienessomos.html">Castellano</a></li> <!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="../english/weare.html">Inglés</a></li> <!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="../català/ca_som.html">Catalán</a></li> <!-- Opción para ver la página en catalán -->
         </ul>
       </div>
     </div>
 
-    <!-- Botón hamburguesa -->
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Menú principal -->
-    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-ite"><a class="nav-link" href="../html/comoayudar.html">CÓMO AYUDAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/quehacemos.html">QUÉ HACEMOS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/colaborar.html">COLABORAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="../html/quienessomos.html">QUIÉNES SOMOS</a></li>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0"> 
+        <li class="nav-ite"><a class="nav-link" href="../html/comoayudar.html">CÓMO AYUDAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../html/quehacemos.html">QUÉ HACEMOS</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../html/colaborar.html">COLABORAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../html/quienessomos.html">QUIÉNES SOMOS</a></li> <!--opción que lleva a otra página-->
       </ul>
     </div>
 
-    <!-- Botón Donar -->
-    <a href="./html/donacion.html"><button class="boton-donar">Donar</button></a>
+    <!-- Botón Donar que lleva a otra pagina-->
+    <a href="../html/donacion.html"><button class="boton-donar">Donar</button></a>
   </div>
 </nav>
 
-<div class=" container-fluid portada1">
+<div class=" container-fluid portada1"> <!--Aqui se muestra todo el contenido-->
     <div class="row">
-        <div class="col-md-12 centro2">
+        <div class="col-md-12 centro2">  <!--Ocupara toda la estructura-->
             <br>
-            <h1 class="tamañoletra">¿Quienes somos?</h1>
+            <h1 class="tamañoletra">¿Quienes somos?</h1>  <!--Titulon de la portada-->
         </div>
     </div>
     
     <div class="row bordes">
-        <div class="col-md-12 fondocolor1">
-            <div class="margenquienes1">
+        <div class="col-md-12 fondocolor1"> <!--Aqui se muestra todo el contenido-->
+            <div class="margenquienes1">  <!--Tendrá un margen-->
                 <h4> Acompañanos a personas, sin importar de dónde vienen, sean tratadas con respeto y tengan las mismas oportunidades. 
                 <br>La igualdad significa que todos deben ser tratados igual ante la ley, y la equidad significa ayudar más a quienes lo necesitan. 
                 <br>También es importante evitar el rechazo o maltrato a los migrantes. 
@@ -72,14 +74,14 @@
         </div>
     </div>
     
-    <div class="row colorfondo1">
+    <div class="row colorfondo1"> <!--Colorblanco en css-->
         <div class="col-md-12 ">
-            <div class="margenquienes1">
+            <div class="margenquienes1">  <!--Que se vea mas en el centro el recuadro-->
                 <div class="margenquienes2"> <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <h4>Misión</h4>
                     <h5>Construimos una sociedad más justa, solidaria e inclusiva en la que se acepte la diversidad como un valor y en la que cada persona pueda desarrollar su proyecto de vida.
-                    <br><br>
+                    <br><br>  <!--Varias lineas se separarán-->
                     Creemos en la capacidad de cambio de cada persona y nos comprometemos con las más vulnerables desde la cercanía y el acompañamiento.</h5>
                     <br>
                 </div>
@@ -90,7 +92,7 @@
     <div class="row colorfondo2">
         <div class="col-12">
             <br>
-            <h1><b>VALORES </b></h1>
+            <h1><b>VALORES </b></h1>  <!--Segundo titulo-->
             <br>
         </div>
     </div>
@@ -98,15 +100,20 @@
     <div class="row colorfondo1">
         <div class="col-md-6">
         <!-- PRIMER FILA COLUMNA IZQUIERDA -->
-            <div class="margenquienes3 coloresbloques"> <!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO-->
+            <div class="margenquienes3 coloresbloques"> <!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
                 <div class="margenquienes5  coloresbloques">  <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques">  <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la PRIMERA IZQUIERDA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento1png.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
                                 <b class="colorapartados"> Cada persona cuenta </b><i class="fas fa-seedling"></i></h4>
                             </div>
+
+                            <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>En Ampaz creemos en el valor único de cada uno. 
                                 <br>
@@ -122,15 +129,20 @@
 
         <div class="col-md-6">
         <!-- PRIMER FILA COLUMNA DERECHA -->
-            <div class="margenquienes4 coloresbloques">
-                <div class="margenquienes5 coloresbloques">
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"> <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la PRIMERA DERECHA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
                                 <b class="colorapartados"> Nadie queda fuera </b><i class="fas fa-comments"></i></h4>
                             </div>
+
+                            <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>Creemos que la participación de cada persona importa. 
                                 <br>Impulsamos espacios donde todas las voces sean escuchadas, valoradas y tenidas en cuenta en los procesos de cambio social.</h6>
@@ -144,15 +156,20 @@
 
         <div class="col-md-6">
         <!-- SEGUNDA FILA COLUMNA IZQUIERDA -->
-            <div class="margenquienes3 coloresbloques">
-                <div class="margenquienes5 coloresbloques">
+            <div class="margenquienes3 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la SEGUNDA IZQUIERDA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento2png.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                               <!--Nombre de los substitulos-->     
                                 <b class="colorapartados"> Junt@s es mejor </b><i class="fas fa-handshake"></i></h4>
                             </div>
+
+                           <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>Fomentamos relaciones basadas en el respeto, la escucha y confianza.
                                 <br>
@@ -167,15 +184,20 @@
 
         <div class="col-md-6">
         <!-- SEGUNDA FILA COLUMNA DERECHA -->
-            <div class="margenquienes4 coloresbloques">
-                <div class="margenquienes5 coloresbloques">
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la SEGUNDA DERECHA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento3.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->           
                                 <b class="colorapartados"> Justicia que se nota </b><i class="fas fa-handshake"></i></h4>
                             </div>
+
+                           <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>Actuamos frente a cualquier forma de injusticia, exclusión o violencia.
                                 <br> 
@@ -190,15 +212,20 @@
 
         <div class="col-md-6">
         <!-- TERCERA FILA COLUMNA IZQUIERDA -->
-            <div class="margenquienes3 coloresbloques">
-                <div class="margenquienes5 coloresbloques">
+            <div class="margenquienes3 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la TERCERA IZQUIERDA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento4.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                               <!--Nombre de los substitulos-->
                                 <b class="colorapartados"> Soñamos, luego actuamos </b><i class="fas fa-handshake"></i></h4>
                             </div>
+
+                           <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>Imaginamos un mundo donde la justicia y la equidad sean reales. 
                                 <br>
@@ -213,15 +240,20 @@
 
         <div class="col-md-6">
         <!-- TERCERA FILA COLUMNA DERECHA -->
-            <div class="margenquienes4 coloresbloques">
-                <div class="margenquienes5 coloresbloques">
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
                     <br>
                     <div class="col-12">
-                        <div class="row coloresbloques">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
                             <div class="col-12">
+                                 <!--Aqui se encuentra la TERCERA DERECHA imagen en movimiento-->
                                 <h4><img src="../img_quienesomos/imagenmovimiento5.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
                                 <b class="colorapartados"> Claros y de frente </b><i class="fas fa-handshake"></i></h4>
                             </div>
+
+                            <!--Aqui se muestra todo el contenido-->
                             <div class="col-12">
                                 <h6>Nos comprometemos con la transparencia y la honestidad. 
                                 <br>
@@ -236,89 +268,89 @@
     </div>
     <div class="row negro">
         <div class="col-12">
-                  <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
+              <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
 
-        <!-- Columna: Para Empresas -->
-        <div class="footer-column">
-          <h3>PARA EMPRESAS</h3>
-          <ul>
-            <li>Alianzas con empresas solidarias</li>
-            <li>Proyectos solidarios</li>
-            <li>Voluntariado corporativo de empresas</li>
-            <li>Haz socia a tu empresa</li>
-            <li>Contratar personas refugiadas</li>
-            <li>Donación de empresas</li>
-            <li>Otras formas</li>
-            <li>Ventajas fiscales</li>
-          </ul>
-          <h3>CONTACTA</h3>
-          <ul>
-            <li>Nuestras sedes</li>
-          </ul>
-        </div>
+                    <!-- Columna: Para Empresas -->
+                    <div class="footer-column">
+                    <h3>PARA EMPRESAS</h3>
+                    <ul>
+                        <li>Alianzas con empresas solidarias</li> <!-- Empresas que ayudan a la ONG -->
+                        <li>Proyectos solidarios</li> <!-- Proyectos en los que pueden participar empresas -->
+                        <li>Voluntariado corporativo de empresas</li> <!-- Voluntariado para empleados de empresas -->
+                        <li>Haz socia a tu empresa</li> <!-- Hacer que una empresa sea socia de la ONG -->
+                        <li>Contratar personas refugiadas</li> <!-- Ayuda para contratar refugiados -->
+                        <li>Donación de empresas</li> <!-- Donaciones hechas por empresas -->
+                        <li>Otras formas</li> <!-- Otras formas de ayudar como empresa -->
+                        <li>Ventajas fiscales</li> <!-- Beneficios fiscales para empresas que ayudan -->
+                    </ul>
+                    <h3>CONTACTA</h3>
+                    <ul>
+                        <li>Nuestras sedes</li> <!-- Dónde están las oficinas de la ONG -->
+                    </ul>
+                    </div>
 
-        <!-- Columna: Para Particulares -->
-        <div class="footer-column">
-          <h3>PARA PARTICULARES</h3>
-          <ul>
-            <li>Hazte Socio/a de la ONG</li>
-            <li>Donar a nuestra ONG</li>
-            <li>Fondo Solidario de Emergencia</li>
-            <li>Voluntariado</li>
-            <li>Infórmate</li>
-            <li>Otras formas de colaborar</li>
-          </ul>
-        </div>
+                    <!-- Columna: Para Particulares -->
+                    <div class="footer-column">
+                    <h3>PARA PARTICULARES</h3>
+                    <ul>
+                        <li>Hazte Socio/a de la ONG</li> <!-- Para hacerse socio como persona individual -->
+                        <li>Donar a nuestra ONG</li>  <!-- Para donar como persona individual -->
+                        <li>Fondo Solidario de Emergencia</li><!-- Fondo para emergencias -->
+                        <li>Voluntariado</li><!-- Para ser voluntario -->
+                        <li>Infórmate</li> <!-- Para recibir información -->
+                        <li>Otras formas de colaborar</li><!-- Otras maneras de ayudar como persona -->
+                    </ul>
+                    </div>
 
-        <!-- Columna: Áreas de trabajo y más -->
-        <div class="footer-column">
-          <h3>AREAS DE TRABAJO</h3>
-          <ul><li>Nuestros Proyectos</li></ul>
-          <h3>ACTUALIDAD</h3>
-          <ul>
-            <li>Noticias</li>
-            <li>Campañas</li>
-          </ul>
-          <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li>
-          <li class="grinish"><B>OFERTAS DE EMPLEO</B></li>
-          <li class="grinish"><B>PRENSA</B></li>
-          <li class="grinish"><B>CANAL DE DENUNCIAS</B></li>
-        </div>
+                    <!-- Columna: Áreas de trabajo y más -->
+                    <div class="footer-column">
+                    <h3>AREAS DE TRABAJO</h3>
+                    <ul><li>Nuestros Proyectos</li></ul> <!-- Proyectos en los que trabaja la ONG -->
+                    <h3>ACTUALIDAD</h3>
+                    <ul>
+                        <li>Noticias</li> <!-- Noticias recientes -->
+                        <li>Campañas</li><!-- Campañas activas -->
+                    </ul>
+                    <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li> <!-- Información sobre cómo pedir asilo -->
+                    <li class="grinish"><B>OFERTAS DE EMPLEO</B></li><!-- Ofertas de trabajo -->
+                    <li class="grinish"><B>PRENSA</B></li><!-- Información para la prensa -->
+                    <li class="grinish"><B>CANAL DE DENUNCIAS</B></li><!-- Canal para denunciar problemas -->
+                    </div>
 
-        <!-- Columna: Redes sociales y newsletter -->
-        <div class="footer-column">
-          <p class="siguenos">Síguenos:</p>
-          <div class="social-icons">
-            <!-- Iconos usando Bootstrap Icons -->
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-telegram"></i>
-          </div>
+                    <!-- Columna: Redes sociales y newsletter -->
+                    <div class="footer-column">
+                    <p class="siguenos">Síguenos:</p>
+                    <div class="social-icons">
+                        <!-- Iconos usando Bootstrap Icons -->
+                        <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+                        <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+                        <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+                        <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+                        <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+                        <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
+                    </div>
 
-          <!-- Newsletter (no funcional, solo visual) -->
-          <p class="newsletter-title">Suscríbete a nuestra ONG</p>
-          <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- es para el correo -->
-          <div class="name-fields">
-            <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
-            <input type="text" placeholder="Apellidos*" /> <!-- es para los apellidos -->
-          </div>
+                    <!-- Newsletter, solo visual -->
+                    <p class="newsletter-title">Suscríbete a nuestra ONG</p>
+                    <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
+                    <div class="name-fields">
+                        <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
+                        <input type="text" placeholder="Apellidos*" /> <!-- es para el apellido -->
+                    </div>
 
-          <!-- Texto legal -->
-          <p class="legal-text">
-            <span class="green">AMPaz</span> podrá tratar mis datos personales para promover
-            mi colaboración y el apoyo a sus campañas, envío de
-            información de actividades y campañas por todos los
-            canales, electrónicos o no. <a href="">Más información</a>
-          </p>
-        </div>
+                    <!-- Texto sobre información legal -->
+                    <p class="legal-text">
+                        <span class="green">AMPaz</span> podrá tratar mis datos personales para promover
+                        mi colaboración y el apoyo a sus campañas, envío de
+                        información de actividades y campañas por todos los
+                        canales, electrónicos o no. <a href="">Más información</a><!-- Aviso de privacidad de datos -->
+                    </p>
+                    </div>
 
-      </div>
-    </footer>
+                </div>
+            </footer>
         </div>
     </div>
 </div>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui som?</title>
+    <link rel="icon" type="img/png" href="../img_quienesomos/somos.png">
+    <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons que estan en el Footer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- LINK BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- LINK CSS --><link rel="stylesheet" href="../css/estilo.css"/>
+</head>
+<body>
+<!-- Menu -->
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- LOGO + IDIOMA -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="navbar-brand" href="../català/ca_portada.html">
+        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a> <!-- Muestra el logo y el nombre de la ONG, y lleva al inicio al hacer clic -->
+
+      <!-- Dropdown de idioma con Bootstrap-->
+      <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button> <!-- Botón que muestra el menú de idiomas al hacer clic -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+          <li><a class="dropdown-item" href="../html/quienessomos.html">Castellano</a></li> <!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="../english/weare.html">Inglés</a></li> <!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="../català/ca_som.html">Català</a></li> <!-- Opción para ver la página en catalán -->
+        </ul>
+      </div>
+    </div>
+
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-ite"><a class="nav-link" href="../català/ca_ayudar.html">COM AJUDAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/fem.html">QUÈ FEM</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/personesrefugiades.html">PERSONES REFUGIADES</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/collaborar.html">COL·LABORAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/ca_som.html">QUI SOM</a></li> <!--opción que lleva a otra página-->
+      </ul>
+    </div>
+
+    <!-- Botón Donar que lleva a otra pagina-->
+    <a href="../català/ca_donacio.html"><button class="boton-donar">Donar</button></a>
+  </div>
+</nav>
+
+<div class=" container-fluid portada1"> <!--Aqui se muestra todo el contenido-->
+    <div class="row">
+        <div class="col-md-12 centro2">  <!--Ocupara toda la estructura-->
+            <br>
+            <h1 class="tamañoletra">Qui som?</h1>  <!--Titulon de la portada-->
+        </div>
+    </div>
+    
+    <div class="row bordes">
+        <div class="col-md-12 fondocolor1"> <!--Aqui se muestra todo el contenido-->
+            <div class="margenquienes1">  <!--Tendrá un margen-->
+                <h4>Acompanyem les persones, sense importar d’on venen, perquè siguin tractades amb respecte i tinguin les mateixes oportunitats. 
+                <br>La igualtat significa que tothom ha de ser tractat igual davant la llei, i l’equitat significa ajudar més a qui ho necessita. 
+                <br>També és important evitar el rebuig o maltractament als migrants. 
+                <br>Defensar aquests drets ajuda a tenir una <b class="estiloletra">"societat més justa per a tothom."</b></h4>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row colorfondo1"> <!--Colorblanco en css-->
+        <div class="col-md-12 ">
+            <div class="margenquienes1">  <!--Que se vea mas en el centro el recuadro-->
+                <div class="margenquienes2"> <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <h4>Missió</h4>
+                    <h5>Construïm una societat més justa, solidària i inclusiva on s’accepti la diversitat com un valor i on cada persona pugui desenvolupar el seu projecte de vida.
+                    <br><br>  <!--Varias lineas se separarán-->
+                    Creiem en la capacitat de canvi de cada persona i ens comprometem amb les més vulnerables des de la proximitat i l’acompanyament.</h5>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row colorfondo2">
+        <div class="col-12">
+            <br>
+            <h1><b>VALORS </b></h1>  <!--Segundo titulo-->
+            <br>
+        </div>
+    </div>
+
+    <div class="row colorfondo1">
+        <div class="col-md-6">
+        <!-- PRIMER FILA COLUMNA IZQUIERDA -->
+            <div class="margenquienes3 coloresbloques"> <!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5  coloresbloques">  <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques">  <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la PRIMERA IZQUIERDA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento1png.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
+                                <b class="colorapartados"> Cada persona compta </b><i class="fas fa-seedling"></i></h4>
+                            </div>
+
+                            <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>A Ampaz creiem en el valor únic de cadascú. 
+                                <br>
+                                Posem les persones al centre, acompanyant-les en el seu camí i reconeixent sempre la seva dignitat i la seva capacitat de créixer.</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>                      
+        </div>
+
+        <div class="col-md-6">
+        <!-- PRIMER FILA COLUMNA DERECHA -->
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"> <!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la PRIMERA DERECHA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
+                                <b class="colorapartados"> Ningú queda fora </b><i class="fas fa-comments"></i></h4>
+                            </div>
+
+                            <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>Creiem que la participació de cada persona importa. 
+                                <br>Impulsem espais on totes les veus siguin escoltades, valorades i tingudes en compte en els processos de canvi social.</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>                      
+        </div>
+
+        <div class="col-md-6">
+        <!-- SEGUNDA FILA COLUMNA IZQUIERDA -->
+            <div class="margenquienes3 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la SEGUNDA IZQUIERDA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento2png.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                               <!--Nombre de los substitulos-->     
+                                <b class="colorapartados"> Junts és millor </b><i class="fas fa-handshake"></i></h4>
+                            </div>
+
+                           <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>Fomentem relacions basades en el respecte, l’escolta i la confiança.
+                                <br>
+                                Apostem per l’encontre entre diferents com a camí cap a una convivència més humana i solidària.</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                      
+        </div>
+
+        <div class="col-md-6">
+        <!-- SEGUNDA FILA COLUMNA DERECHA -->
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la SEGUNDA DERECHA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento3.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->           
+                                <b class="colorapartados"> Justícia que es nota </b><i class="fas fa-handshake"></i></h4>
+                            </div>
+
+                           <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>Actuem davant de qualsevol forma d’injustícia, exclusió o violència.
+                                <br> 
+                                Apostem per la igualtat de tracte i oportunitats, especialment entre qualsevol gènere.</h6>    
+                                <br>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                      
+        </div>
+
+        <div class="col-md-6">
+        <!-- TERCERA FILA COLUMNA IZQUIERDA -->
+            <div class="margenquienes3 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la TERCERA IZQUIERDA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento4.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                               <!--Nombre de los substitulos-->
+                                <b class="colorapartados"> Somiem, després actuem </b><i class="fas fa-handshake"></i></h4>
+                            </div>
+
+                           <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>Imaginem un món on la justícia i l’equitat siguin reals. 
+                                <br>
+                                Treballem des del local, però amb la mirada posada en un futur comú més sostenible, just i esperançador.</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>                      
+        </div>
+
+        <div class="col-md-6">
+        <!-- TERCERA FILA COLUMNA DERECHA -->
+            <div class="margenquienes4 coloresbloques"><!--ESTO HARA QUE TENGA UN MARGEN HACIA EL CENTRO Y EL COLOR DEL BLOQUE -->
+                <div class="margenquienes5 coloresbloques"><!--ESTE MARGEN HARA QUE EL TEXTO SE VEA DENTRO DEL MARGEN-->
+                    <br>
+                    <div class="col-12">
+                        <div class="row coloresbloques"> <!-- En el css se vera el color -->
+                            <div class="col-12">
+                                 <!--Aqui se encuentra la TERCERA DERECHA imagen en movimiento-->
+                                <h4><img src="../img_quienesomos/imagenmovimiento5.png" width="10%" alt="Descripción" class="imagen-rotatoria">
+                                
+                                <!--Nombre de los substitulos-->
+                                <b class="colorapartados"> Clars i de cara </b><i class="fas fa-handshake"></i></h4>
+                            </div>
+
+                            <!--Aqui se muestra todo el contenido-->
+                            <div class="col-12">
+                                <h6>Ens comprometem amb la transparència i l’honestedat. 
+                                <br>
+                                Compartim la nostra activitat amb claredat, coherència i compromís envers la societat.</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                      
+        </div>
+    </div>
+
+    <div class="row negro">
+        <div class="col-12">
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Columna: Para Empresas -->
+                <div class="footer-column">
+                <h3>PER A EMPRESES</h3>
+                <ul>
+                    <li>Aliances amb empreses solidàries</li> <!-- Empresas que ayudan a la ONG -->
+                    <li>Projectes solidaris</li> <!-- Proyectos en los que pueden participar empresas -->
+                    <li>Voluntariat corporatiu d’empreses</li> <!-- Voluntariado para empleados de empresas -->
+                    <li>Fes sòcia la teva empresa</li> <!-- Hacer que una empresa sea socia de la ONG -->
+                    <li>Contractar persones refugiades</li> <!-- Ayuda para contratar refugiados -->
+                    <li>Donació d’empreses</li> <!-- Donaciones hechas por empresas -->
+                    <li>Altres formes</li> <!-- Otras formas de ayudar como empresa -->
+                    <li>Avantatges fiscals</li> <!-- Beneficios fiscales para empresas que ayudan -->
+                </ul>
+                <h3>CONTACTA</h3>
+                <ul>
+                    <li>Les nostres seus</li> <!-- Dónde están las oficinas de la ONG -->
+                </ul>
+                </div>
+
+                <!-- Columna: Para Particulares -->
+                <div class="footer-column">
+                <h3>PER A PARTICULARS</h3>
+                <ul>
+                    <li>Fes-te soci/a de l’ONG</li> <!-- Para hacerse socio como persona individual -->
+                    <li>Donar a la nostra ONG</li>  <!-- Para donar como persona individual -->
+                    <li>Fons Solidari d’Emergència</li><!-- Fondo para emergencias -->
+                    <li>Voluntariat</li><!-- Para ser voluntario -->
+                    <li>Informa’t</li> <!-- Para recibir información -->
+                    <li>Altres formes de col·laborar</li><!-- Otras maneras de ayudar como persona -->
+                </ul>
+                </div>
+
+                <!-- Columna: Áreas de trabajo y más -->
+                <div class="footer-column">
+                <h3>ÀREES DE TREBALL</h3>
+                <ul><li>Els nostres projectes</li></ul> <!-- Proyectos en los que trabaja la ONG -->
+                <h3>ACTUALITAT</h3>
+                <ul>
+                    <li>Notícies</li> <!-- Noticias recientes -->
+                    <li>Campanyes</li><!-- Campañas activas -->
+                </ul>
+                <li class="grinish"><b>COM SOL·LICITAR ASIL</b></li> <!-- Información sobre cómo pedir asilo -->
+                <li class="grinish"><b>OFERTES DE TREBALL</b></li><!-- Ofertas de trabajo -->
+                <li class="grinish"><b>PREMSA</b></li><!-- Información para la prensa -->
+                <li class="grinish"><b>CANAL DE DENÚNCIES</b></li><!-- Canal para denunciar problemas -->
+                </div>
+
+                <!-- Columna: Redes sociales y newsletter -->
+                <div class="footer-column">
+                <p class="siguenos">Segueix-nos:</p>
+                <div class="social-icons">
+                    <!-- Iconos usando Bootstrap Icons -->
+                    <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+                    <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+                    <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+                    <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+                    <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+                    <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
+                </div>
+
+                <!-- Newsletter, solo visual -->
+                <p class="newsletter-title">Subscriu-te a la nostra ONG</p>
+                <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
+                <div class="name-fields">
+                    <input type="text" placeholder="Nom*" /> <!-- es para el nombre -->
+                    <input type="text" placeholder="Cognoms*" /> <!-- es para el apellido -->
+                </div>
+
+                <!-- Texto sobre información legal -->
+                <p class="legal-text">
+                    <span class="green">AMPaz</span> podrà tractar les meves dades personals per promoure
+                    la meva col·laboració i el suport a les seves campanyes, enviament de
+                    informació d’activitats i campanyes per tots els
+                    canals, electrònics o no. <a href="">Més informació</a><!-- Aviso de privacidad de datos -->
+                </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMPaz</title>
-    <link rel="icon" type="img/png" href="./img/iconportada.png">
+    <!--Es para poner el icono de la pagina--><link rel="icon" type="img/png" href="./img/iconportada.png">
     <!-- LINK BOOTSTRAP PARA EL MENU --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons que estan en el Footer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
@@ -12,85 +12,86 @@
 </head>
 <body>
 
+<!-- Menu -->
 <nav class="navbar navbar-expand-lg border-bottom">
   <div class="container d-flex align-items-center justify-content-between">
     
     <!-- LOGO + IDIOMA -->
     <div class="d-flex align-items-center gap-3">
       <a class="navbar-brand" href="./index.html">
-        <img src="./img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+        <img src="./img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a> <!-- Muestra el logo y el nombre de la ONG, y lleva al inicio al hacer clic -->
 
-      <!-- Dropdown de idioma con Bootstrap -->
+      <!-- Dropdown de idioma con Bootstrap-->
       <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
         <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
           Idioma
-        </button>
+        </button> <!-- Botón que muestra el menú de idiomas al hacer clic -->
         <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
-          <li><a class="dropdown-item" href="./index.html">Castellano</a></li>
-          <li><a class="dropdown-item" href="./english/front.html">Inglés</a></li>
-          <li><a class="dropdown-item" href="./català/ca_portada.html">Catalán</a></li>
+          <li><a class="dropdown-item" href="./index.html">Castellano</a></li> <!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="./english/front.html">Inglés</a></li> <!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="./català/ca_portada.html">Catalán</a></li> <!-- Opción para ver la página en catalán -->
         </ul>
       </div>
     </div>
 
-    <!-- Botón hamburguesa -->
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Menú principal -->
-    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-ite"><a class="nav-link" href="./html/comoayudar.html">CÓMO AYUDAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="./html/quehacemos.html">QUÉ HACEMOS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="./html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li>
-        <li class="nav-ite"><a class="nav-link" href="./html/colaborar.html">COLABORAR</a></li>
-        <li class="nav-ite"><a class="nav-link" href="./html/quienessomos.html">QUIÉNES SOMOS</a></li>
+    <div class="collapse navbar-collapse justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0"> 
+        <li class="nav-ite"><a class="nav-link" href="./html/comoayudar.html">CÓMO AYUDAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="./html/quehacemos.html">QUÉ HACEMOS</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="./html/personasrefugiadas.html">PERSONAS REFUGIADAS</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="./html/colaborar.html">COLABORAR</a></li> <!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="./html/quienessomos.html">QUIÉNES SOMOS</a></li> <!--opción que lleva a otra página-->
       </ul>
     </div>
 
-    <!-- Botón Donar -->
+    <!-- Botón Donar que lleva a otra pagina-->
     <a href="./html/donacion.html"><button class="boton-donar">Donar</button></a>
   </div>
 </nav>
 
-<!--Slider-->
-
+<!--Aqui hemos puesto un Slider que tiene tres imagenes con Bootstrap-->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicadores -->
+  <!-- Estos son los tres indicadores dentro del Slider de abajo con los que podemos cambiar de una imagen a otra-->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <!--primer indicador-->
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button> <!--segundo indicador-->
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button> <!--tercer indicador-->
     </div>
 
         <!-- Slides -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./img/cabecera.png" alt="Imagen 1">
+            <img src="./img/cabecera.png" alt="Imagen 1"> <!--primera imagen del slider -->
           </div>
           <div class="carousel-item">
-            <img src="./img/refu.png" alt="Imagen 2">
+            <img src="./img/refu.png" alt="Imagen 2"> <!--segunda imagen del slider -->
           </div>
           <div class="carousel-item">
-            <img src="./img/azlo.png"alt="Imagen 3">
+            <img src="./img/azlo.png"alt="Imagen 3"> <!--tercera imegen del sliders-->
           </div>
         </div>
 
-        <!-- Flechas -->
+        <!-- Flechas para cambiar de imagen-->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+          <span class="visually-hidden">Anterior</span> <!--la flecha para ver la imagen anterior-->
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+          <span class="visually-hidden">Siguiente</span> <!-- la flecha para ver la siguiente imagen -->
         </button>
       </div>
 
-      <h2 class="amp"><B>QUÉ ES AMPAZ?</B></h2><!-- Subtítulo -->
+      <h2 class="amp"><B>QUÉ ES AMPAZ?</B></h2><!-- Titulo -->
       <div class="princip">
-        <div class="cuadro-texto">
+        <div class="cuadro-texto"> <!--descripcion explicando qué es AMPaz-->
           <p>Se dedica a los derechos de igualdad y equidad en la migración y el refugio 
             que buscan que todas las personas, sin importar de dónde vienen, 
             sean tratadas con respeto y tengan las mismas oportunidades. 
@@ -104,104 +105,103 @@
             organizaciones tengan acceso a servicios básicos, como atención médica, educación y apoyo legal.
           </p>
         </div>
-        <!--para la parte de subcategorías-->
+
+        <!--para la parte de los cuadros con imágenes y dentro los párrafos-->
         <div class="fil">
           <!-- CUADRO 1 -->
             <div class="cart">
               <a href="./html/comoayudar.html"><img src="./img/1.png" alt="AYUDAR">
-                <p>CÓMO AYUDAR</p></a>
+                <p>CÓMO AYUDAR</p></a> <!-- Imagen y texto para ir a la página de cómo ayudar -->
             </div>
           <!-- CUADRO 2 -->
             <div class="cart">
               <a href="./html/quehacemos.html"><img src="./img/2.png" alt="HACEMOS">
-                <p>QUÉ HACEMOS</p></a>
+                <p>QUÉ HACEMOS</p></a> <!-- Imagen y texto para ir a la página de qué hacemos -->
               </div>
           <!-- CUADRO 3 -->
             <div class="cart">
               <a href="./html/personasrefugiadas.html"><img src="./img/3.png" alt="PERSONAS">
-                <p>PERSONAS REFUGIADAS</p></a>
+                <p>PERSONAS REFUGIADAS</p></a> <!-- Imagen y texto para ir a la página de personas refugiadas -->
               </div>
           <!-- CUADRO 4 -->
             <div class="cart">
               <a href="./html/colaborar.html"><img src="./img/4.png" alt="DECIMOS">
-                <p>COLABORAR</p></a>
+                <p>COLABORAR</p></a> <!-- Imagen y texto para ir a la página de colaborar -->
             </div>
           <!-- CUADRO 5 -->
             <div class="cart">
               <a href="./html/quienessomos.html"><img src="./img/5.png" alt="SOMOS">
-                <p>QUIÉNES SOMOS</p></a>
+                <p>QUIÉNES SOMOS</p></a> <!-- Imagen y texto para ir a la página de quiénes somos -->
             </div>
           <!-- CUADRO 6 -->
             <div class="cart">
               <a href="./html/donacion.html"><img src="./img/6.png" alt="DONAR">
-                <p>DONAR</p></a>
+                <p>DONAR</p></a> <!-- Imagen y texto para ir a la página de donaciones -->
             </div>
         </div>
       </div>
 
       <!-- Contenedor principal de la sección -->
-  <section class="cear-section">
-    <div class="plano">
-      <!-- Título principal -->
-      <h1 class="ampaz">AMPAZ - AYUDA AL REFUGIADO</h1>
-      <!-- Contenedor de las tres columnas -->
-      <div class="cards-container">
-        <!-- Cuadro 1 -->
-        <div class="card">
-          <img src="./img/ayuda.png" alt="Icono derecho de asilo" />
-          <h3>EQUIPO DE AYUDA LEGAL</h3>
-          <p>
-            Este grupo se encarga de que estas personas entiendan sus derechos 
-            y reciban ayuda con papeles importantes, como pedir asilo o permisos 
-            para quedarse. También los defenderían si tienen problemas legales o 
-            si sus derechos no se respetan.
-          </p>
-          <a href="./html/quienessomos.html"><button> QUINES SOMOS </button></a>
-        </div>
+        <section class="cear-section">
+          <div class="plano">
+            <!-- Título principal -->
+            <h1 class="ampaz">AMPAZ - AYUDA AL REFUGIADO</h1> <!-- Título de la sección -->
+            <!-- Contenedor de las tres columnas -->
+            <div class="cards-container">
+              <!-- Cuadro 1 -->
+              <div class="card">
+                <img src="./img/ayuda.png" alt="Icono derecho de asilo" />
+                <h3>EQUIPO DE AYUDA LEGAL</h3>
+                <p> <!--Explicación de lo que hace el equipo legal-->
+                  Este grupo se encarga de que estas personas entiendan sus derechos 
+                  y reciban ayuda con papeles importantes, como pedir asilo o permisos 
+                  para quedarse. También los defenderían si tienen problemas legales o 
+                  si sus derechos no se respetan.
+                </p>
+                <a href="./html/quienessomos.html"><button> QUINES SOMOS </button></a> <!-- Botón para saber más sobre el equipo -->
+              </div>
 
-        <!-- Cuadro 2 -->
-        <div class="card">
-          <img src="./img/INTEGRACIÓN.PNG" alt="Icono refugio" />
-          <h3>EQUIPO DE INTEGRACIÓN</h3>
-          <p>
-            Este grupo les ayuda a sentirse parte de la comunidad. 
-            Les enseñan el idioma, les ayudan a encontrar trabajo y un lugar para 
-            vivir, les dan herramientas para que puedan valerse por sí mismos y les enseñan sobre la cultura 
-            y las costumbres del lugar.
+              <!-- Cuadro 2 -->
+              <div class="card">
+                <img src="./img/INTEGRACIÓN.PNG" alt="Icono refugio" />
+                <h3>EQUIPO DE INTEGRACIÓN</h3>
+                <p><!-- Explicación de lo que hace el equipo de integración -->
+                  Este grupo les ayuda a sentirse parte de la comunidad. 
+                  Les enseñan el idioma, les ayudan a encontrar trabajo y un lugar para 
+                  vivir, les dan herramientas para que puedan valerse por sí mismos y les enseñan sobre la cultura 
+                  y las costumbres del lugar.
+                </p>
+                <a href="./html/donacion.html"><button> ¿NOS AYUDAS? </button></a> <!-- Botón para ayudar al equipo -->
+              </div>
 
-          </p>
-          <a href=""><button> ¿NOS AYUDAS? </button></a>
-        </div>
+              <!-- Cuadro 3 -->
+              <div class="card">
+                <img src="./img/CONCIENTIZACIÓN.png" alt="Icono denuncias" />
+                <h3>EQUIPO DE CONCIENTIZACIÓN</h3>
+                <p><!-- Explicación de lo que hace el equipo de concientización -->
+                  Este grupo se dedica a que la gente de aquí entienda por qué 
+                  estas personas vienen y la importancia de tratarlas bien. Hacen 
+                  charlas y actividades para que todos seamos más empáticos y ayudan a que la gente
+                  sepa que estas personas tienen derechos.
+                </p>
+                <a href="./html/quehacemos.html"><button> QUE HACEMOS </button></a> <!-- Botón para saber más sobre el equipo -->
+              </div>
 
-        <!-- Cuadro 3 -->
-        <div class="card">
-          <img src="./img/CONCIENTIZACIÓN.png" alt="Icono denuncias" />
-          <h3>EQUIPO DE CONCIENTIZACIÓN</h3>
-          <p>
-            Este grupo se dedica a que la gente de aquí entienda por qué 
-            estas personas vienen y la importancia de tratarlas bien. Hacen 
-            charlas y actividades para que todos seamos más empáticos y ayudan a que la gente
-            sepa que estas personas tienen derechos.
-
-          </p>
-          <a href="./html/quehacemos.html"><button> QUE HACEMOS </button></a>
-        </div>
-
-        <!-- Cuadro 4 -->
-        <div class="card">
-          <img src="./img/investigación.png" alt="Icono denuncias" />
-          <h3>COLABORAR</h3>
-          <p>
-            Este grupo estudia los problemas que enfrentan estas personas, 
-            junta información y propone ideas para que las leyes y las autoridades 
-            los ayuden mejor. Hablan con los políticos y otras organizaciones para 
-            lograr cambios importantes.
-          </p>
-          <a href="./html/colaborar.html"><button> HAZ VOLUNTARIADO </button></a>
-        </div>
-      </div>
-    </div>
-  </section>
+              <!-- Cuadro 4 -->
+              <div class="card">
+                <img src="./img/investigación.png" alt="Icono denuncias" />
+                <h3>COLABORAR</h3>
+                <p><!-- Explicación de lo que hace el equipo de colaboración -->
+                  Este grupo estudia los problemas que enfrentan estas personas, 
+                  junta información y propone ideas para que las leyes y las autoridades 
+                  los ayuden mejor. Hablan con los políticos y otras organizaciones para 
+                  lograr cambios importantes.
+                </p>
+                <a href="./html/colaborar.html"><button> HAZ VOLUNTARIADO </button></a> <!-- Botón para hacer voluntariado -->
+              </div>
+            </div>
+          </div>
+        </section>
 
 
   <!-- Footer -->
@@ -212,18 +212,18 @@
         <div class="footer-column">
           <h3>PARA EMPRESAS</h3>
           <ul>
-            <li>Alianzas con empresas solidarias</li>
-            <li>Proyectos solidarios</li>
-            <li>Voluntariado corporativo de empresas</li>
-            <li>Haz socia a tu empresa</li>
-            <li>Contratar personas refugiadas</li>
-            <li>Donación de empresas</li>
-            <li>Otras formas</li>
-            <li>Ventajas fiscales</li>
+            <li>Alianzas con empresas solidarias</li> <!-- Empresas que ayudan a la ONG -->
+            <li>Proyectos solidarios</li> <!-- Proyectos en los que pueden participar empresas -->
+            <li>Voluntariado corporativo de empresas</li> <!-- Voluntariado para empleados de empresas -->
+            <li>Haz socia a tu empresa</li> <!-- Hacer que una empresa sea socia de la ONG -->
+            <li>Contratar personas refugiadas</li> <!-- Ayuda para contratar refugiados -->
+            <li>Donación de empresas</li> <!-- Donaciones hechas por empresas -->
+            <li>Otras formas</li> <!-- Otras formas de ayudar como empresa -->
+            <li>Ventajas fiscales</li> <!-- Beneficios fiscales para empresas que ayudan -->
           </ul>
           <h3>CONTACTA</h3>
           <ul>
-            <li>Nuestras sedes</li>
+            <li>Nuestras sedes</li> <!-- Dónde están las oficinas de la ONG -->
           </ul>
         </div>
 
@@ -231,28 +231,28 @@
         <div class="footer-column">
           <h3>PARA PARTICULARES</h3>
           <ul>
-            <li>Hazte Socio/a de la ONG</li>
-            <li>Donar a nuestra ONG</li>
-            <li>Fondo Solidario de Emergencia</li>
-            <li>Voluntariado</li>
-            <li>Infórmate</li>
-            <li>Otras formas de colaborar</li>
+            <li>Hazte Socio/a de la ONG</li> <!-- Para hacerse socio como persona individual -->
+            <li>Donar a nuestra ONG</li>  <!-- Para donar como persona individual -->
+            <li>Fondo Solidario de Emergencia</li><!-- Fondo para emergencias -->
+            <li>Voluntariado</li><!-- Para ser voluntario -->
+            <li>Infórmate</li> <!-- Para recibir información -->
+            <li>Otras formas de colaborar</li><!-- Otras maneras de ayudar como persona -->
           </ul>
         </div>
 
         <!-- Columna: Áreas de trabajo y más -->
         <div class="footer-column">
           <h3>AREAS DE TRABAJO</h3>
-          <ul><li>Nuestros Proyectos</li></ul>
+          <ul><li>Nuestros Proyectos</li></ul> <!-- Proyectos en los que trabaja la ONG -->
           <h3>ACTUALIDAD</h3>
           <ul>
-            <li>Noticias</li>
-            <li>Campañas</li>
+            <li>Noticias</li> <!-- Noticias recientes -->
+            <li>Campañas</li><!-- Campañas activas -->
           </ul>
-          <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li>
-          <li class="grinish"><B>OFERTAS DE EMPLEO</B></li>
-          <li class="grinish"><B>PRENSA</B></li>
-          <li class="grinish"><B>CANAL DE DENUNCIAS</B></li>
+          <li class="grinish"><B>CÓMO SOLICITAR ASILO</B></li> <!-- Información sobre cómo pedir asilo -->
+          <li class="grinish"><B>OFERTAS DE EMPLEO</B></li><!-- Ofertas de trabajo -->
+          <li class="grinish"><B>PRENSA</B></li><!-- Información para la prensa -->
+          <li class="grinish"><B>CANAL DE DENUNCIAS</B></li><!-- Canal para denunciar problemas -->
         </div>
 
         <!-- Columna: Redes sociales y newsletter -->
@@ -260,33 +260,33 @@
           <p class="siguenos">Síguenos:</p>
           <div class="social-icons">
             <!-- Iconos usando Bootstrap Icons -->
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-youtube"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-telegram"></i>
+            <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+            <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+            <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+            <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+            <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+            <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
           </div>
 
-          <!-- Newsletter (no funcional, solo visual) -->
+          <!-- Newsletter, solo visual -->
           <p class="newsletter-title">Suscríbete a nuestra ONG</p>
-          <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- es para el correo -->
+          <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
           <div class="name-fields">
             <input type="text" placeholder="Nombre*" /> <!-- es para el nombre -->
-            <input type="text" placeholder="Apellidos*" /> <!-- es para los apellidos -->
+            <input type="text" placeholder="Apellidos*" /> <!-- es para el apellido -->
           </div>
 
-          <!-- Texto legal -->
+          <!-- Texto sobre información legal -->
           <p class="legal-text">
             <span class="green">AMPaz</span> podrá tratar mis datos personales para promover
             mi colaboración y el apoyo a sus campañas, envío de
             información de actividades y campañas por todos los
-            canales, electrónicos o no. <a href="">Más información</a>
+            canales, electrónicos o no. <a href="">Más información</a><!-- Aviso de privacidad de datos -->
           </p>
         </div>
 
       </div>
     </footer>
-      <!--Bootrstrap--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!--Bootrstrap--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Hace que los menús y sliders funcionen -->
     </body>
 </html>
