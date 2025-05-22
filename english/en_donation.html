@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <!--Es para el icono--><link rel="icon" href="../img_dona/icono_dona.png" type="image/png">
+    <!-- LINK BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons que estan en el Footer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- LINK CSS --><link rel="stylesheet" href="../css/estilo.css"/>
+</head>
+<body>
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- LOGO + IDIOMA -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="navbar-brand d-flex align-items-center" href="../english/front.html">
+        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+
+      <!-- Dropdown de idioma con Bootstrap -->
+      <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button><!-- Botón que muestra el menú de idiomas al hacer clic -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+          <li><a class="dropdown-item" href="../html/donacion.html">Castellano</a></li><!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="../english/en_donation.html">Inglés</a></li><!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="../català/ca_donacio.html">Catalán</a></li><!-- Opción para ver la página en catalán -->
+        </ul>
+      </div>
+    </div>
+
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-ite"><a class="nav-link" href="../english/help.html">HOW TO HELP</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/wedo.html">WHAT WE DO</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/refugees.html">REFUGEES</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/colaborate.html">COLLABORATE</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/weare.html">WHO WE ARE</a></li><!--opción que lleva a otra página-->
+      </ul>
+    </div>
+
+    <!-- Botón Donar que lleva a otra pagina-->
+    <a href="../english/en_donation.html"><button class="boton-donar">Donar</button></a>
+  </div>
+</nav>
+
+<!-- CONTENIDO DE LA PAGINA -->
+<div class="portada container-fluid ">
+    <div class="row ">
+        <div class="col-md-6 margenderecho">
+            <!-- ESTA PARTE ES EL CONTENIDO DE LA COLUMNA DERECHA -->
+            <h3 class="colortitulodonar"><b>DONATE AND HELP REFUGEES PEOPLE</b></h3><!--PRIMER Titulo-->
+            <!--CONTENIDO del Primer Titulo -->
+            <h5>Donating to our NGO means supporting the reception of refugees.
+                <br>Today you can do something extraordinary.
+                <br>Make a charitable donation.<br><br>
+            </h5>
+
+            <h3 class="colortitulodonar"><b>HELP CREATE SHELTER <br>WITH YOUR DONATION</b></h3><!--SEGUNDO Titulo-->
+            <!--CONTENIDO del segundo Titulo -->
+            <h5>Every donation from those who decide to collaborate with our NGO<br>
+                it is essential for refugees and migrants to<br>
+                those we serve receive comprehensive care and we can<br>
+                cover their most urgent needs.<br></h5> 
+        </div>
+        
+        <!--TODO EL CONTENIDO DE LA COLUMNA DERECHA -->
+        <div class="col-md-6 ">
+            <div class="margen2"><!--Margenes de la columna de derecha TODO-->
+                <div class="row fondocolordonar"><!--FONDO COLOR de TODA la columna de derecha-->
+                    <div class="col-12 ">
+                        <br>
+                        <!--PRIMER TITULO columna derecha -->
+                        <h3 class="tituloaportacion"><b>I want my contribution to be:</b></h3><!--LINEA de abajo-->
+                    </div>
+                    <div class="col-12">
+                    <!--BOTONES PRINCIPALES DE MENSUAL Y PUNTUAL-->
+                        <ul class="nav nav-pills mb-3 justify-content-center" id="donation-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active btn-mensual" id="mensual-tab" data-bs-toggle="pill" data-bs-target="#mensual" type="button" role="tab" aria-controls="mensual" aria-selected="true">
+                                Monthly
+                                </button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn-puntual" id="puntual-tab" data-bs-toggle="pill" data-bs-target="#puntual" type="button" role="tab" aria-controls="puntual" aria-selected="false">
+                                One-time
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="donation-tabContent">
+                        <div class="tab-pane fade show active" id="mensual" role="tabpanel" aria-labelledby="mensual-tab">
+                            <!-- Aqui adentro se encuentra el contenido de los botones de la pestaña MENSUAL-->
+                            <div class="row">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <!--Botón de los 30 euros-->
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-30-tab" data-bs-toggle="pill" data-bs-target="#pills-30" type="button" role="tab">30€</button>
+                                    </li>
+
+                                    <!--Botón de los 60 euros-->
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-60-tab" data-bs-toggle="pill" data-bs-target="#pills-60" type="button" role="tab">60€</button>
+                                    </li>
+
+                                    <!--Botón de los 90 euros-->
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-120-tab" data-bs-toggle="pill" data-bs-target="#pills-120" type="button" role="tab">90€</button>
+                                    </li>
+            
+                                    <!--Botón de los 120 euros-->
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-other-tab" data-bs-toggle="pill" data-bs-target="#pills-other" type="button" role="tab">120€</button>
+                                    </li>
+                                </ul>
+
+                                <!-- Contenido del tab DE LOS 30-->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade" id="pills-30" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"> <!--color de la fila del contenido-->
+                                                <!-- ESTE ES EL CONTNIDO DE LOS 30€ -->
+                                                <div class="margen"> <!--Margen que se vea mas adentro el texto-->
+                                                    <p><b>You collaborate with a stay in a reception center
+                                                        <br> 
+                                                        for refugees people.</b></p>
+                                                </div>
+                                            </div>
+
+                                             <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept. 
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <!-- Contenido del tab DE LOS 30-->
+                                    <div class="tab-pane fade show active" id="pills-60" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+
+                                            <!-- ESTE ES EL CONTNIDO DE LOS 60€ -->
+                                                <div class="margen"><!--Margen que se vea mas adentro el texto-->
+                                                    <p><b>You help cover special health treatments.</b></p>
+                                                </div>
+                                            </div>
+
+                                           <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-120" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+                                            <!-- ESTE ES EL CONTNIDO DE LOS 90€ -->
+                                                <div class="margen">
+                                                    <p><b>You collaborate with the coverage of essential needs<br> 
+                                                        such as transportation and school supplies for people<br> 
+                                                        refugees in training.</b></p>
+                                                </div>
+                                            </div>
+
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last name *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it.
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-other" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+
+                                            <!-- ESTE ES EL CONTNIDO DE LOS 120€ -->
+                                                <div class="margen">
+                                                    <p><b>You contribute to the course registration costs<br> 
+                                                        vocational training for refugees.</b></p>
+                                                </div>
+                                            </div>
+
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it. 
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="puntual" role="tabpanel" aria-labelledby="puntual-tab">
+                         <!-- Aqui adentro se encuentra el contenido de los botones de la pestaña PUNTUAL  -->
+                        <div class="row">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-30puntual-tab" data-bs-toggle="pill" data-bs-target="#pills-30puntual" type="button" role="tab">30€</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-60puntual-tab" data-bs-toggle="pill" data-bs-target="#pills-60puntual" type="button" role="tab">60€</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-120puntual-tab" data-bs-toggle="pill" data-bs-target="#pills-120puntual" type="button" role="tab">120€</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-240puntual-tab" data-bs-toggle="pill" data-bs-target="#pills-240puntual" type="button" role="tab">240€</button>
+                                    </li>
+                                </ul>
+
+                                <!-- Contenido del tab-->
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade" id="pills-30puntual" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+                                                <!-- ESTE ES EL CONTNIDO DE LOS 30€ -->
+                                                <div class="margen">
+                                                    <p><b>You collaborate with a stay in a reception center<br>
+                                                        for refugees.</b></p>
+                                                </div>
+                                            </div>
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it. 
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade show active" id="pills-60puntual" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+                                                <!-- ESTE ES EL CONTNIDO DE LOS 60€ -->
+                                                <div class="margen">
+                                                    <p><b>You help cover special health treatments.</b></p>
+                                                </div>
+                                            </div>
+
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone numbers *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it. 
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-120puntual" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+                                            <!-- ESTE ES EL CONTNIDO DE LOS 120€ -->
+                                                <div class="margen">
+                                                    <p><b>You contribute to the registration fees for courses<br>
+                                                        vocational training for refugees.</b></p>
+                                                </div>
+                                            </div>
+
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number*" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it. 
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>  
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-240puntual" role="tabpanel">
+                                        <div class="row">
+                                            <div class="col-12 fondocolor"><!--color de la fila del contenido-->
+                                            <!-- ESTE ES EL CONTNIDO DE LOS 240€ -->
+
+                                                <div class="margen">
+                                                    <p><b>You collaborate with access to comprehensive job insertion programs and<br>
+                                                         psychosocial support for refugees, facilitating their integration<br> in society.</b></p>
+                                                </div>
+                                            </div>
+                                        
+                                            <!--SEGUNDO TITULO -->
+                                            <div class="col-12">
+                                                <br>
+                                                <h3><b>Personal data:</b></h3>
+                                                <br>
+                                                <form>
+                                                    <!-- Campo de texto para ingresar el nombre. Es obligatorio (required) -->
+                                                    <input type="text" name="nombre" placeholder="Name *" required>
+                                                    
+                                                    <!-- Campo de texto para ingresar los apellidos. Es obligatorio -->
+                                                    <input type="text" name="apellidos" placeholder="Last names *" required>
+                                                    
+                                                    <!-- Campo para ingresar el correo electrónico. Tipo email para validar formato y es obligatorio -->
+                                                    <input type="email" name="email" placeholder="E-mail *" required>
+                                                    
+                                                    <!-- Campo para ingresar el teléfono. Tipo tel para dispositivos móviles y es obligatorio -->
+                                                    <input type="tel" name="telefono" placeholder="Phone number *" required>
+
+                                                    <!-- PRIMER CHECKBOX-->
+                                                    <div class="checkbox">
+                                                    <!-- CHECKBOX ES una casilla que el usuario debe marcar para poder enviar el formulario -->
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para recibir información -->
+                                                            <input type="checkbox" required>
+                                                           Yes, I would like to receive information about AMPAZ activities and projects.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- SEGUNDO CHECKBOX -->
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <!-- Checkbox obligatorio para aceptar la política de privacidad y autorización -->
+                                                            <input type="checkbox" required>
+                                                            Yes, I accept it.
+                                                            <!-- Enlace a la política de privacidad -->
+                                                            <a href="#">privacy and data processing policy and I authorize AMPAZ to manage my data</a>.
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Botón para enviar el formulario -->
+                                                    <button type="submit" class="btn-ayudar">I want to help</button>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+            </div>
+        </div>            
+    </div>
+</div>
+
+<div class="container-fluid segundofondo"> <!--Color del fondo-->
+    <div class="row">
+        <div class="col-12">
+            <br>
+                <h4 class="textomedio">WE ANSWER YOUR QUESTIONS:<br><!--Clase que el texto sea centrado-->
+                WHY DONATE YOUR MONEY TO OUR NGO?</h4>
+            <br>
+            </div>
+        </div>
+
+        <!--TODO EL CONTENIDDO DE LA COLUMNA DE LOS ACORDEONES-->
+        <div class="col-12">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <!-- PRIMER ACCORDION -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5><b>How does AMPAZ help refugees?</b></h5>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <!--Contenido del primer accordion-->
+                                <div class="col-12">
+                                    <p>At AMPAZ, we provide shelter for refugees in our shelters, as well as legal assistance, psychological support, training, and guidance for their social and employment integration.<br>
+                                     In addition, we actively work on reporting and public advocacy to defend their rights, with the goal of promoting legislative changes that guarantee lasting improvements in their quality of life.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- SEGUNDO ACCORDION -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5><b>What is the difference between making a donation and becoming a member?</b></h5>
+                        </button>
+                      </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <!--Contenido del segundo accordion-->
+                                <div class="col-12">
+                                    Making a donation means making a one-time contribution, at the time you decide.<br>
+                                    It's a supportive way to collaborate with AMPAZ, especially useful in emergency situations or when immediate support is needed.<br>
+                                    Becoming a member implies an ongoing commitment to our cause. 
+                                    It is a regular contribution (monthly, quarterly, annually, etc.) 
+                                    that allows us to better plan our actions and ensure the sustainability 
+                                    of our programs supporting migrants and refugees.<br>
+                                    There is no minimum amount, every contribution counts.
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TERCER ACCORDION -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <h5><b>Where does the money I donate go?</b></h5>
+                        </button>
+                        </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <!--Contenido del tercer accordion-->
+                                <div class="col-12">
+                                    <p>Your donation allows AMPAZ to carry out concrete actions such as:</p>
+                                    <ul>
+                                        <li><strong>Accommodation:</strong> Maintenance and management of reception centers for migrants and refugees.</li>
+                                        <li><strong>Legal advice:</strong> Legal support for regularization and defense of rights.</li>
+                                        <li><strong>Psychological care:</strong> Emotional support and assistance in adaptation processes.</li>
+                                        <li><strong>Training and job placement:</strong> Courses, workshops and guidance to facilitate integration.</li>
+                                        <li><strong>Incidence and awareness:</strong> Campaigns for equality, equity, and human rights.</li>
+                                    </ul>
+                                    <p>Every contribution, large or small, directly contributes to improving lives and building a more inclusive society.</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- CUARTO ACCORDION -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <h5><b>Do you have any further questions?</b></h5>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <!--Contenido del cuarto accordion-->
+                                <div class="col-12">
+                                    <p>You can get more information by calling us at 674 91 16 02, Monday to Friday from 9:00 a.m. to 4:00 p.m. or by writing an email to ampaz@gmail.com<br>
+                                        We will try to resolve any questions you may have.</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            <br>
+        </div>
+    </div>
+</div>
+
+    <div class="row negro">
+    <div class="col-12">
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Columna: Para Empresas -->
+                <div class="footer-column">
+                    <h3>FOR COMPANIES</h3>
+                    <ul>
+                        <li>Alliances with supportive companies</li> <!-- Empresas que ayudan a la ONG -->
+                        <li>Solidarity projects</li> <!-- Proyectos en los que pueden participar empresas -->
+                        <li>Corporate volunteering</li> <!-- Voluntariado para empleados de empresas -->
+                        <li>Make your company a partner</li> <!-- Hacer que una empresa sea socia de la ONG -->
+                        <li>Hire refugees</li> <!-- Ayuda para contratar refugiados -->
+                        <li>Company donations</li> <!-- Donaciones hechas por empresas -->
+                        <li>Other ways</li> <!-- Otras formas de ayudar como empresa -->
+                        <li>Tax advantages</li> <!-- Beneficios fiscales para empresas que ayudan -->
+                    </ul>
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li>Our offices</li> <!-- Dónde están las oficinas de la ONG -->
+                    </ul>
+                </div>
+
+                <!-- Columna: Para Particulares -->
+                <div class="footer-column">
+                    <h3>FOR INDIVIDUALS</h3>
+                    <ul>
+                        <li>Become a Member</li> <!-- Para hacerse socio como persona individual -->
+                        <li>Donate to our NGO</li>  <!-- Para donar como persona individual -->
+                        <li>Emergency Solidarity Fund</li><!-- Fondo para emergencias -->
+                        <li>Volunteer</li><!-- Para ser voluntario -->
+                        <li>Stay Informed</li> <!-- Para recibir información -->
+                        <li>Other ways to help</li><!-- Otras maneras de ayudar como persona -->
+                    </ul>
+                </div>
+
+                <!-- Columna: Áreas de trabajo y más -->
+                <div class="footer-column">
+                    <h3>WORK AREAS</h3>
+                    <ul><li>Our Projects</li></ul> <!-- Proyectos en los que trabaja la ONG -->
+                    <h3>NEWS</h3>
+                    <ul>
+                        <li>News</li> <!-- Noticias recientes -->
+                        <li>Campaigns</li><!-- Campañas activas -->
+                    </ul>
+                    <li class="grinish"><b>HOW TO APPLY FOR ASYLUM</b></li> <!-- Información sobre cómo pedir asilo -->
+                    <li class="grinish"><b>JOB OFFERS</b></li><!-- Ofertas de trabajo -->
+                    <li class="grinish"><b>PRESS</b></li><!-- Información para la prensa -->
+                    <li class="grinish"><b>WHISTLEBLOWER CHANNEL</b></li><!-- Canal para denunciar problemas -->
+                </div>
+
+                <!-- Columna: Redes sociales y newsletter -->
+                <div class="footer-column">
+                    <p class="siguenos">Follow us:</p>
+                    <div class="social-icons">
+                        <!-- Iconos usando Bootstrap Icons -->
+                        <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+                        <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+                        <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+                        <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+                        <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+                        <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
+                    </div>
+
+                    <!-- Newsletter, solo visual -->
+                    <p class="newsletter-title">Subscribe to our NGO</p>
+                    <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
+                    <div class="name-fields">
+                        <input type="text" placeholder="First Name*" /> <!-- es para el nombre -->
+                        <input type="text" placeholder="Last Name*" /> <!-- es para el apellido -->
+                    </div>
+
+                    <!-- Texto sobre información legal -->
+                    <p class="legal-text">
+                        <span class="green">AMPaz</span> may process my personal data to promote
+                        my collaboration and support of its campaigns, sending
+                        information about activities and campaigns through all
+                        channels, whether electronic or not. <a href="">More information</a> <!-- Aviso de privacidad de datos -->
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
