@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLABORATE</title>
+    <!--Es para el icono--><link rel="icon" href="../img_colaborar/icono_cola.png" type="image/png">
+    <!-- LINK BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons que estan en el Footer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- LINK CSS --><link rel="stylesheet" href="../css/estilo.css"/>
+</head>
+<body>
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- LOGO + IDIOMA -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="navbar-brand d-flex align-items-center" href="../english/front.html">
+        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+
+      <!-- Dropdown de idioma con Bootstrap -->
+      <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+          Language
+        </button><!-- Botón que muestra el menú de idiomas al hacer clic -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+          <li><a class="dropdown-item" href="../html/colaborar.html">Castellà</a></li><!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="../english/colaborate.html">Anglès</a></li><!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="../català/collaborar.html">Català</a></li><!-- Opción para ver la página en catalán -->
+        </ul>
+      </div>
+    </div>
+
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-ite"><a class="nav-link" href="../english/help.html">HOW TO HELP</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/wedo.html">WHAT DO WE DO?</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/refugees.html">REFUGEES PEOPLE</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/colaborate.html">COLABORATE</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../english/weare.html">WHO WE ARE?</a></li><!--opción que lleva a otra página-->
+      </ul>
+    </div>
+
+    <!-- Botón Donar que lleva a otra pagina-->
+    <a href="../english/en_donation.html"><button class="boton-donar">Donate</button></a> 
+  </div>
+</nav>
+
+<div class="container-fluid fondovoluntarios"> <!--Color azulito de fondo en TODO EL CONTENIDO INTERIOR -->
+    <div class="row">
+        <div class="col-12 portada2 "><!--Fondo imagen de voluntarios-->
+            <div class="bloque-texto"> <!--Bloque de color cuyo margen también contiene-->
+                <h4><b>Collaborate</b></h4>
+                <h2><b>Become a volunteer</b></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="margenvoluntarios"> <!--Color del bloque-->
+            <br>
+                <div class="bloque-voluntariado"> <!--Bloque de la liena que se ve al lado del texto -->
+                <p><b>At Ampaz, we walk alongside people, regardless of their origin, so they are treated with dignity 
+                    and have access to the same opportunities. We defend equality before the law and equity 
+                    as a form of justice: giving more to those who need it most. We reject all forms of 
+                    discrimination, especially against migrants, and work for a society where everyone can 
+                    live with respect and hope.</b></p>
+                </div>
+                <br>
+                <div class="margenvoluntarios1"> <!--Margen del SEGUNDO PARRAFO-->
+                    <h6><b>Our program offers:</b></h6>
+                        <ul>
+                            <li><b>Legal advice on immigration:</b> to help understand and exercise their rights.</li>
+                            <li><b>Support for voluntary return:</b> for those who decide to return to their country of origin.</li>
+                            <li><b>Co-development projects:</b> that encourage active participation in their home communities.</li>
+                            <li><b>Awareness and advocacy actions:</b> to promote a fair and humane view of migration.</li>
+                        </ul>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="col-md-4"> <!--Parte del lado DERECHO-->
+            <br><br>
+            <img src="../img_colaborar/imagen1.jpg" width="90%" height="80%" alt="Description" class="imagen-rotatoria img_1"> <!--La imagen del lado DERECHO-->
+            <br>
+        </div>
+
+        <div class="col-12">
+            <div class="margenvoluntarios2"><!--Primer margen-->
+                <div class="margenvoluntarios1"><!--Segundo margen mas adentro-->
+                    <br>
+                    <p>Additionally, <b>AMPAZ holds an annual Volunteering Gathering</b> so that the people who collaborate with the organization can share their experiences and proposals in favor of refugees. These gatherings bring together volunteers from all delegations. They have become a unique and enriching experience, as well as an excellent training, motivating, and energizing space that enables discussion, mutual understanding, and exchange of ideas.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="margenvoluntarios3"><!--Margen de TODO EL CONTENIDO-->
+        <div class="row">
+            <div class="col-12 ">
+                <h1 class="textomedio">How to become a volunteer?</h1><!--Clase para que el texto se vea en el centro-->
+                <br>
+            </div>
+
+            <div class="col-md-4 "> <!--PRIMERA COLUMNA-->
+                <div class="row">
+                    <div class="col-12 centro-image-container"><!--Lo que hara es que las imagenes se vean ccentrados-->
+
+                        <!--Imagen de la PRIMERA COLUMNA-->
+                        <img src="../img_colaborar/imageninfo.png" width="45%" height="50%" alt="Description" class="imagen-rotatoria  imagenesmediaquery mx-auto d-block">
+                    </div>
+                    <div class="col-12">
+                        <div class="margenvoluntarios4"><!--margenes de arriba y abajo, y de izq a der-->
+                            <br>
+                            <p>To access AMPAZ's volunteer program, it is necessary to attend an information session where you will learn about our work and the current volunteer needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 centro-image-container"> <!--SEGUNDA COLUMNA-->
+                <div class="row">
+                    <div class="col-12 centro-image-container"><!--Lo que hara es que las imagenes se vean ccentrados-->
+
+                        <!--Imagen de la SEGUNDA COLUMNA-->
+                        <img src="../img_colaborar/imagenordenadorpersona.png" width="45%" height="50%" alt="Description" class="imagen-rotatoria imagenesmediaquery mx-auto d-block">
+                    </div>
+                    <div class="col-12">
+                        <div class="margenvoluntarios4"><!--margenes de arriba y abajo, y de izq a der-->
+                            <br>
+                            <p>Information sessions are held in <b>IN-PERSON</b> and <b>VIRTUAL FORMAT.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 centro-image-container"><!--TERCERA COLUMNA-->
+                <div class="row">
+                    <div class="col-12 centro-image-container"> <!--Lo que hara es que las imagenes se vean ccentrados-->
+
+                        <!--Imagen de la TERCERA COLUMNA-->
+                        <img src="../img_colaborar/imagenmano.png" width="45%" height="50%" alt="Description" class="imagen-rotatoria imagenesmediaquery mx-auto d-block">
+                    </div>
+                    <div class="col-12">
+                        <div class="margenvoluntarios4"><!--margenes de arriba y abajo, y de izq a der-->
+                            <br>
+                            <p>You can book your spot in one of our information sessions to learn how to collaborate with AMPAZ and support refugees and migrants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="margenvoluntarios1"> <!--Margen de izq a der. -->
+                    <p><b>IF YOU WANT TO JOIN THE AMPAZ VOLUNTEER TEAM, PLEASE COMPLETE THE FOLLOWING FORM:</b></p>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="margenvoluntarios1"> <!--Margen de izq a der. -->
+                    <div class="col-12 textomedio1"><!--Texto en el medio-->
+                        <h5 class="letranegro"><b>Become a volunteer</b></h5> <!--Color letra en negro-->
+                        <p>Fill out the form below</p>
+                    </div>
+                    <form class="margen-for">
+                    <!-- Fila 1: Nombre, Primer apellido, Segundo apellido -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                        <!-- Campo: Nombre -->
+                        <input type="text" class="form-control w-100" placeholder="First name *" required>
+                        </div>
+                        <div class="col-md-4">
+                        <!-- Campo: Primer apellido -->
+                        <input type="text" class="form-control w-100" placeholder="Last name *" required>
+                        </div>
+                        <div class="col-md-4">
+                        <!-- Campo: Segundo apellido -->
+                        <input type="text" class="form-control w-100" placeholder="Second last name">
+                        </div>
+                    </div>
+
+                    <!-- Fila 2: Tipo de documento y número -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                        <!-- Selector: Tipo de documento -->
+                        <select class="form-select" required>
+                            <option selected disabled>Document type *</option>
+                            <option>DNI</option>
+                            <option>NIE</option>
+                            <option>Passport</option>
+                        </select>
+                        </div>
+                        <div class="col-md-6">
+                        <!-- Campo: Número de documento -->
+                        <input type="text" class="form-control w-100" placeholder="DNI/NIE/Passport *" required>
+                        </div>
+                    </div>
+
+                    <!-- Fila 3: Email y Teléfono -->
+                    <div class="row  mb-3">
+                        <div class="col-md-6 ">
+                        <!-- Campo: Correo electrónico -->
+                        <input type="email" class="form-control w-100" placeholder="Email *" required>
+                        </div>
+
+                        <div class="col-md-6">
+                        <!-- Campo: Teléfono -->
+                        <input type="tel" class="form-control w-100" placeholder="Phone *" required>
+                        </div>
+                    </div>
+
+                    <!-- Fila 4: Sexo e Idioma -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                        <!-- Selector: Sexo -->
+                        <select class="form-select">
+                            <option selected disabled>Gender</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <option>Non-binary</option>
+                            <option>Prefer not to say</option>
+                        </select>
+                        <br>
+                        </div>
+                        <div class="col-md-6">
+                        <!-- Selector: Idioma -->
+                        <select class="form-select" required>
+                            <option selected disabled>Communication language *</option>
+                            <option>Spanish</option>
+                            <option>Catalan</option>
+                            <option>English</option>
+                        </select>
+                        <br>
+                        </div>
+                    </div>
+
+                    <!-- Fila 5: Opciones de interés -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                        <!-- Selector: Opciones de interés -->
+                        <select class="form-select">
+                            <option selected disabled>Areas of interest</option>
+                            <option>Volunteering</option>
+                            <option>Donations</option>
+                            <option>Collaborations</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <!-- Fila 6: Descripción -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                        <!-- Campo: Descripción breve -->
+                        <textarea class="form-control" rows="3" placeholder="Brief description"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Botón para enviar el formulario -->
+                    <button type="submit" class="btn-enviar"><b>Send</b></button>
+
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div><br>
+</div>
+
+<div class="row negro">
+    <div class="col-12">
+          <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Columna: Para Empresas -->
+                <div class="footer-column">
+                <h3>FOR COMPANIES</h3>
+                <ul>
+                    <li>Partnerships with supportive companies</li> <!-- Empresas que ayudan a la ONG -->
+                    <li>Solidarity projects</li> <!-- Proyectos en los que pueden participar empresas -->
+                    <li>Corporate volunteering</li> <!-- Voluntariado para empleados de empresas -->
+                    <li>Make your company a member</li> <!-- Hacer que una empresa sea socia de la ONG -->
+                    <li>Hire refugees</li> <!-- Ayuda para contratar refugiados -->
+                    <li>Company donations</li> <!-- Donaciones hechas por empresas -->
+                    <li>Other ways</li> <!-- Otras formas de ayudar como empresa -->
+                    <li>Tax benefits</li> <!-- Beneficios fiscales para empresas que ayudan -->
+                </ul>
+                <h3>CONTACT</h3>
+                <ul>
+                    <li>Our offices</li> <!-- Dónde están las oficinas de la ONG -->
+                </ul>
+                </div>
+
+                <!-- Columna: Para Particulares -->
+                <div class="footer-column">
+                <h3>FOR INDIVIDUALS</h3>
+                <ul>
+                    <li>Become a member of the NGO</li> <!-- Para hacerse socio como persona individual -->
+                    <li>Donate to our NGO</li>  <!-- Para donar como persona individual -->
+                    <li>Emergency Solidarity Fund</li><!-- Fondo para emergencias -->
+                    <li>Volunteering</li><!-- Para ser voluntario -->
+                    <li>Stay informed</li> <!-- Para recibir información -->
+                    <li>Other ways to help</li><!-- Otras maneras de ayudar como persona -->
+                </ul>
+                </div>
+
+                <!-- Columna: Áreas de trabajo y más -->
+                <div class="footer-column">
+                <h3>AREAS OF WORK</h3>
+                <ul><li>Our Projects</li></ul> <!-- Proyectos en los que trabaja la ONG -->
+                <h3>NEWS</h3>
+                <ul>
+                    <li>News</li> <!-- Noticias recientes -->
+                    <li>Campaigns</li><!-- Campañas activas -->
+                </ul>
+                <li class="grinish"><B>HOW TO APPLY FOR ASYLUM</B></li> <!-- Información sobre cómo pedir asilo -->
+                <li class="grinish"><B>JOB OFFERS</B></li><!-- Ofertas de trabajo -->
+                <li class="grinish"><B>PRESS</B></li><!-- Información para la prensa -->
+                <li class="grinish"><B>REPORTING CHANNEL</B></li><!-- Canal para denunciar problemas -->
+                </div>
+
+                <!-- Columna: Redes sociales y newsletter -->
+                <div class="footer-column">
+                <p class="siguenos">Follow us:</p>
+                <div class="social-icons">
+                    <!-- Iconos usando Bootstrap Icons -->
+                    <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+                    <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+                    <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+                    <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+                    <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+                    <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
+                </div>
+
+                <!-- Newsletter, solo visual -->
+                <p class="newsletter-title">Subscribe to our NGO</p>
+                <input type="email" placeholder="Email*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
+                <div class="name-fields">
+                    <input type="text" placeholder="First name*" /> <!-- es para el nombre -->
+                    <input type="text" placeholder="Last name*" /> <!-- es para el apellido -->
+                </div>
+
+                <!-- Texto sobre información legal -->
+                <p class="legal-text">
+                    <span class="green">AMPaz</span> may process my personal data to promote
+                    my collaboration and support for its campaigns, sending
+                    information about activities and campaigns through all
+                    channels, electronic or not. <a href="">More information</a><!-- Aviso de privacidad de datos -->
+                </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
