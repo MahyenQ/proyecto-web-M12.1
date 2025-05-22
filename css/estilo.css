@@ -1065,11 +1065,12 @@ label {
 .princip { /* Cuadro de texto de "QUE ES AMPAZ?" */
   flex-direction: column;
   align-items: center;
+  margin-right: 10%; /*para que el cuador de texto quede en medio*/
 }
 
 .cuadro-texto {
   width: 90%;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .card h3 { /* Título de cada cuadro */
@@ -1114,6 +1115,8 @@ label {
     
 .fil {
   grid-template-columns: repeat(2, 1fr); /* 2 columna en móviles */
+  margin-left: 10%;
+  align-items: center;
 }
 
 .cart img {
