@@ -1002,6 +1002,87 @@ label {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*PARA LA PAGINA DE PERSONAS REFUGIADAS*/
+
+.portada3 {
+  position: relative;
+  background-image: url('../img_personasrefugiadas/refugiadosfondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 70vh; /* altura más pequeña */
+}
+.fondorefugiados{
+  background-color: rgb(248, 236, 207); /*Color azulito*/
+}
+.bloque-texto1 {
+  color: rgb(255, 255, 255);
+  bottom: 0; /* justo al final de la imagen */
+  left: 0; /* alineado a la izquierda */
+  padding: 20px;
+  max-width: 60%; /* para que no ocupe todo el ancho */
+  margin-left: 2%;
+  margin-top: 10%;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0);/* Sombra suave para profundidad */
+}
+.bloque-refugiado {
+    border-left: 6px solid #d0c38f; /* Rojo estilo Cáritas */
+    padding-left: 15px; /* espacio a la izquierda con la imagen */
+    margin-left: 2%;
+    margin-right: 3%;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.fondorefugiados1 {
+  transition: background-color 0.3s ease; /* animación suave */
+    background-color: rgb(219, 248, 207); /*Color azulito*/
+  padding: 10px;
+}
+
+.fondorefugiados1:hover { /*HOVER es cuando el cursor del mouse pasa por encima del elemento. */
+  background-color: rgb(117, 171, 94); /*Color verde oscuro*/
+}
+
+.fondorefugiados1:hover h5 {
+  color: white; /* cambia el color del h5 a blanco */
+}
+
+.margen-refugiados{
+  margin-top: 2%;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-bottom: 2%;
+}
+.margen-refugiados1{
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.imagen-medio{
+   display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Asegúrate de que el contenedor tenga una altura */
+}
+.imagen-medioPorcentaje{
+  border: 1px  solid #8adc71;
+}
+.textomedio1{
+  text-align: center;
+}
+
+.imagendiseño{
+  border: 0.5px solid #ffffff;
+  box-shadow: 0 0 20px #b17f34
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1251,5 +1332,11 @@ label {
     margin-left: 25px;
   }
 
+  /*---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*PARA LA PAGINA DE PERSONAS REFUGIADAS*/
+  .tamaño-imagen{
+    width: 100%;
+    height: 100%;
+  }
   }
   

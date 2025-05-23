@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONES REFUGIADES</title>
+    <!--Es para el icono--><link rel="icon" href="../img_personasrefugiadas/pr.png" type="image/png">
+    <!-- LINK BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons que estan en el Footer --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--LINK de Fontas para la letra --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <!-- LINK CSS --><link rel="stylesheet" href="../css/estilo.css"/>
+</head>
+<body>
+<!-- MENU -->
+<nav class="navbar navbar-expand-lg border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    <!-- LOGO + IDIOMA -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="navbar-brand d-flex align-items-center" href="../català/ca_portada.html">
+        <img src="../img/AMPaz.png" alt="AMPaz" height="40">AMPaz</a>
+
+      <!-- Dropdown de idioma con Bootstrap -->
+      <div class="dropdown">
+        <!-- Menú desplegable para elegir el idioma -->
+        <button class="btn btn-light btn-sm dropdown-toggle" type="button" id="dropdownIdioma" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button><!-- Botón que muestra el menú de idiomas al hacer clic -->
+        <ul class="dropdown-menu" aria-labelledby="dropdownIdioma">
+          <li><a class="dropdown-item" href="../html/personasrefugiadas.html">Castellà</a></li><!-- Opción para ver la página en español -->
+          <li><a class="dropdown-item" href="../english/refugees.html">Anglès</a></li><!-- Opción para ver la página en inglés -->
+          <li><a class="dropdown-item" href="../català/personesrefugiades.html">Català</a></li><!-- Opción para ver la página en catalán -->
+        </ul>
+      </div>
+    </div>
+
+    <!--botón para modo móvil, este se utiliza para las tres lineas que aparecen en el menú cuando la pantalla es pequeña para ver el menú completo-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú principal -->
+    <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-ite"><a class="nav-link" href="../català/ca_ayudar.html">COM AJUDAR</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/fem.html">QUÈ FEM</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/personesrefugiades.html">PERSONES REFUGIADES</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/collaborar.html">COL·LABORA</a></li><!--opción que lleva a otra página-->
+        <li class="nav-ite"><a class="nav-link" href="../català/ca_som.html">QUI SOM</a></li><!--opción que lleva a otra página-->
+      </ul>
+    </div>
+
+    <!-- Botón Donar que lleva a otra pagina-->
+    <a href="../català/ca_donacio.html"><button class="boton-donar">Donar</button></a> 
+  </div>
+</nav>
+
+<!-- Contenedor general con fondo temático de refugiados -->
+<div class="container-fluid fondorefugiados"><!--Aqui se encuentra el COLOR del fondo-->
+    <!-- Fila de portada -->
+    <div class="row">
+        <div class="col-12 portada3"> <!--Aqui se encuentra el fondo de la IMAGEN-->
+            <div class="bloque-texto1"> <!--MARGENES del TITULO-->
+                <h1><b>REFUGIATS</b></h1>
+                <h4><b>Treballant incansablement pels drets<br> i el benestar d’immigrants i refugiats.</b></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Título de la sección principal -->
+    <div class="row">
+        <div class="col-12 ">
+            <div class="margen-refugiados"> <!--Margen tiradondo para el interior-->
+                <br>
+                <h1><b>Situació de les persones refugiades</b></h1>
+            </div>
+        </div>
+
+        <!-- Texto principal explicativo y primera imagen -->
+        <div class="col-md-8 ">
+            <div class="margen-refugiados"> <!--Margen tiradondo para el interior-->
+                <div class="bloque-refugiado textomedio1"> <!--Linea de barra que se muestra al lado del texto-->
+                    <p>Més de 110 milions de persones viuen forçosament lluny de casa seva per guerres, violència i greus vulneracions dels seus drets fonamentals. Això suposa més de l’1% de la població mundial i la xifra més alta mai registrada per <a href="#">ACNUR</a>. Xifres que parlen per si soles sobre la situació dels refugiats.</p>
+                    
+                    <div class="imagen-medio">
+                    <!--IMAGEN DE DEBAJO DEL TEXTO-->
+                        <img src="../img_personasrefugiadas/imagen2.jpg" width="50%" height="30%" alt="Descripció" class="imagendiseño tamaño-imagen">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagen del lado DERECHO -->
+        <div class="col-md-4">
+            <img src="../img_personasrefugiadas/personasrefugiadas.png" width="100%" height="100%" alt="Descripció" class="imagen-rotatoria tamaño-imagen">
+        </div>
+
+        <!-- Información adicional sobre cifras de refugiados y segunda imagen -->
+        <div class="col-12">
+            <div class="margen-refugiados"> <!--Margen tiradondo para el interior-->
+                Milions de persones refugiades s’han vist obligades a fugir del seu país per salvar la seva vida.<br>
+                Fugen de la persecució per motius de raça, religió, nacionalitat, idees polítiques, gènere o orientació sexual.<br>
+                A finals del 2023, segons dades de <a href="#">ACNUR</a>, <b>més de 43 milions de persones</b> havien creuat fronteres a la recerca de protecció, i <b>68 milions més</b> estaven desplaçades dins del seu propi país.<br>
+                <b>Des de la nostra ONG, et convidem a formar part del canvi: col·labora, dona suport o uneix-te com a voluntari/a per oferir esperança i dignitat a qui més ho necessita.</b><br>
+                <br>
+                <div class="imagen-medio">
+                    <img src="../img_personasrefugiadas/porcentajeRefugiados.jpg" width="80%" height="80%" alt="Descripció" class="imagen-medioPorcentaje tamaño-imagen">
+                </div>
+            </div>
+        </div>
+
+        <!--  PRIMERA Historia personal: Guediouma -->
+        <div class="col-md-4">
+            <div class="margen-refugiados "> <!--Margen tiradondo para el interior-->
+                <div class="fondorefugiados1">
+                    <img src="../img_personasrefugiadas/1Historia.jpg" width="100%" height="100%" alt="Descripció" class="">
+
+                    <div class="margen-refugiados1"> <!--MARGEN SOLO TITULO MAS PORCIENTON DE MARGEN-->
+                        <h5><b>Guediouma va fugir de la guerra a Mali</b></h5>
+                    </div>
+
+                    <div class="margen-refugiados"><!--Margen tiradondo para el interior-->
+                        <p><b>La guerra va canviar la vida de Guediouma per sempre.
+                            <br>Encara molt jove, va haver de prendre la decisió de fugir per viure amb la tranquil·litat de qui no tem per la seva vida, tot i que això suposés deixar-ho tot enrere. “Al meu país no em sentia segur, per això vaig decidir marxar.”</b></p>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <!-- SEGUNDA Historia personal: Yolanda y William -->
+        <div class="col-md-4 ">
+            <div class="margen-refugiados "> <!--Margen tiradondo para el interior-->
+                <div class="fondorefugiados1">
+                    <img src="../img_personasrefugiadas/2Historiapareja.jpg" width="100%" height="100%" alt="Descripció" class="">
+                        
+                    <div class="margen-refugiados1"> <!--MARGEN SOLO TITULO MAS PORCIENTON DE MARGEN-->
+                        <h5><b>Yolanda i William: haver de fugir amb més de 60 anys</b></h5>
+                    </div>
+
+                    <div class="margen-refugiados"> <!--Margen tiradondo para el interior-->
+                        <p><b>Una parella equatoriana va haver de fugir del seu país després de patir amenaces i extorsió, tot i portar una vida estable. La decisió de fugir no va ser fàcil.
+                            <br>Avui són en un centre d'acollida, tot i que s'enfronten al repte de començar de nou sent grans i amb incertesa sobre el seu futur laboral.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TERCERA Historia personal: María -->
+        <div class="col-md-4">
+            <div class="margen-refugiados">
+                <div class="fondorefugiados1">
+                    <img src="../img_personasrefugiadas/3Historia.jpg" width="100%" height="100%" alt="Descripció" class="">
+                        
+                    <div class="margen-refugiados1"> <!--MARGEN SOLO TITULO MAS PORCIENTON DE MARGEN-->
+                        <h5><b>El desig de la Maria per al seu país: ‘‘Tant de bo s’acabin les bales’’</b></h5>
+                    </div>
+
+                    <div class="margen-refugiados">
+                        <p><b>Una jove de San Salvador va haver de fugir amb el seu germà per escapar de la violència que vivien a casa, marcada per la presència d'una perillosa banda.
+                            <br>Avui, després d’anys de por, ha trobat a Espanya un lloc on començar de nou en pau.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+
+<div class="row negro">
+    <div class="col-12">
+          <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Columna: Para Empresas -->
+                <div class="footer-column">
+                <h3>PER A EMPRESES</h3>
+                <ul>
+                    <li>Aliançes amb empreses solidàries</li> <!-- Empresas que ayudan a la ONG -->
+                    <li>Projectes solidaris</li> <!-- Proyectos en los que pueden participar empresas -->
+                    <li>Voluntariat corporatiu d'empreses</li> <!-- Voluntariado para empleados de empresas -->
+                    <li>Fes sòcia la teva empresa</li> <!-- Hacer que una empresa sea socia de la ONG -->
+                    <li>Contractar persones refugiades</li> <!-- Ayuda para contratar refugiados -->
+                    <li>Donació d'empreses</li> <!-- Donaciones hechas por empresas -->
+                    <li>Altres formes</li> <!-- Otras formas de ayudar como empresa -->
+                    <li>Avantatges fiscals</li> <!-- Beneficios fiscales para empresas que ayudan -->
+                </ul>
+                <h3>CONTACTA</h3>
+                <ul>
+                    <li>Les nostres seus</li> <!-- Dónde están las oficinas de la ONG -->
+                </ul>
+                </div>
+
+                <!-- Columna: Para Particulares -->
+                <div class="footer-column">
+                <h3>PER A PARTICULARS</h3>
+                <ul>
+                    <li>Fes-te soci/a de l'ONG</li> <!-- Para hacerse socio como persona individual -->
+                    <li>Donar a la nostra ONG</li>  <!-- Para donar como persona individual -->
+                    <li>Fons Solidari d'Emergència</li><!-- Fondo para emergencias -->
+                    <li>Voluntariat</li><!-- Para ser voluntario -->
+                    <li>Informa't</li> <!-- Para recibir información -->
+                    <li>Altres formes de col·laborar</li><!-- Otras maneras de ayudar como persona -->
+                </ul>
+                </div>
+
+                <!-- Columna: Áreas de trabajo y más -->
+                <div class="footer-column">
+                <h3>ÀREES DE TREBALL</h3>
+                <ul><li>Els nostres projectes</li></ul> <!-- Proyectos en los que trabaja la ONG -->
+                <h3>ACTUALITAT</h3>
+                <ul>
+                    <li>Notícies</li> <!-- Noticias recientes -->
+                    <li>Campanyes</li><!-- Campañas activas -->
+                </ul>
+                <li class="grinish"><b>COM SOL·LICITAR ASIL</b></li> <!-- Información sobre cómo pedir asilo -->
+                <li class="grinish"><b>OFERTES DE FEINA</b></li><!-- Ofertas de trabajo -->
+                <li class="grinish"><b>PREMSA</b></li><!-- Información para la prensa -->
+                <li class="grinish"><b>CANAL DE DENÚNCIES</b></li><!-- Canal para denunciar problemas -->
+                </div>
+
+                <!-- Columna: Redes sociales y newsletter -->
+                <div class="footer-column">
+                <p class="siguenos">Segueix-nos:</p>
+                <div class="social-icons">
+                    <!-- Iconos usando Bootstrap Icons -->
+                    <i class="bi bi-twitter-x"></i> <!-- Icono de Twitter -->
+                    <i class="bi bi-facebook"></i><!-- Icono de Facebook -->
+                    <i class="bi bi-instagram"></i><!-- Icono de Instagram -->
+                    <i class="bi bi-youtube"></i><!-- Icono de YouTube -->
+                    <i class="bi bi-linkedin"></i><!-- Icono de LinkedIn -->
+                    <i class="bi bi-telegram"></i><!-- Icono de Telegram -->
+                </div>
+
+                <!-- Newsletter, solo visual -->
+                <p class="newsletter-title">Subscriu-te a la nostra ONG</p>
+                <input type="email" placeholder="Correu electrònic*" class="newsletter-input" /> <!-- Para poner tu correo y recibir noticias -->
+                <div class="name-fields">
+                    <input type="text" placeholder="Nom*" /> <!-- es para el nombre -->
+                    <input type="text" placeholder="Cognoms*" /> <!-- es para el apellido -->
+                </div>
+
+                <!-- Texto sobre información legal -->
+                <p class="legal-text">
+                    <span class="green">AMPaz</span> podrà tractar les meves dades personals per promoure
+                    la meva col·laboració i el suport a les seves campanyes, enviament
+                    d'informació d'activitats i campanyes per tots els
+                    canals, electrònics o no. <a href="">Més informació</a><!-- Aviso de privacidad de datos -->
+                </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
